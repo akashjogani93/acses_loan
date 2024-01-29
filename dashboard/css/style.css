@@ -1,0 +1,60 @@
+#footer{
+    background-color: #d0d0d0;
+    padding: 8px;
+}
+#sidebar{
+    background-color:purple;
+    height: 100vh;
+}
+
+#sidebar .navs .links{
+    padding: 8px;
+    list-style: none;
+
+}
+#sidebar .navs .links a{
+    text-decoration: none;
+    color: #fff;
+}
+.AdminProfile {
+    padding: 20px;
+    border-bottom: 0.4px solid #d0d0d0;
+} 
+.navs ul{
+    margin-left: 0px;
+    padding-left: 0px;
+    margin-bottom: 0px;
+}
+.navs ul .links{
+    padding-left: 0px;
+    margin-left: 0px;
+    padding-top: 10px;
+
+}
+.dashboard{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding-left: 0px;
+}
+.dashbox{
+    width: 30%;
+    padding: 20px;
+    list-style: none;
+    margin: 4px;
+}
+.dashbox .fa-solid{
+    font-size: 60px;
+}
+.dashbox:nth-child(1){
+    background-color: blue;
+}
+.dashbox:nth-child(2){
+    background-color: purple;
+}
+.dashbox:nth-child(3){
+    background-color: green;
+}
+.dashbox h6{
+    color: #fff;
+}

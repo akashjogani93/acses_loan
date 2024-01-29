@@ -1,0 +1,426 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Open+Sans:wght@300;400;500;600;700&display=swap');
+
+body,
+html {
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f6f6f6;
+}
+.footerSocials{
+    display: flex;
+    flex-direction: row;
+    padding-left: 0px;
+    margin-left: -10px;
+
+}
+
+strong {
+    font-size: 13px;
+}
+
+@media only screen and (max-width: 600px) {
+    .breaks{
+        display: none !important;
+    }
+    .mob{
+        margin-top:25px;
+    }
+    .mob-head{
+        font-size:18px;
+    }
+    .joint-applicant {
+        margin-top: -18px;
+    }
+}
+                        
+.footerSocials li{
+    padding-left: 0px;
+    list-style: none;
+    margin: 7px;
+    padding: 7px;
+    border: 0.8px solid purple;
+    border-color: purple;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footerSocials li:hover{
+    background-color: purple;
+}
+.footerSocials li:hover #icon,.footerSocials li:hover #icon2,.footerSocials li:hover #icon3,.footerSocials li:hover #icon4{
+    color: #fff;
+}
+.footerSocials li a{
+    text-decoration: none;
+    color: purple;
+    margin-top: -4px;
+}
+.footerSocials li a .fa-brands{
+    text-align: center;
+    vertical-align: middle;
+}
+.navbar {
+    /* box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px; */
+    position: sticky;
+    top: 0px;
+    z-index: 999;
+}
+
+.navbar-brand {
+    width: 25%;
+}
+
+.navbar-brand img {
+    width: 100%;
+}
+
+.login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: #f6f6f6;
+
+}
+
+.login1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    padding: 50px 20px;
+    background-color: #f6f6f6;
+
+}
+
+.box {
+    background-color: hsl(0, 0%, 100%);
+    width: 30%;
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 10px;
+}
+
+.box1 {
+    background-color: hsl(0, 0%, 100%);
+    width: 40%;
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 10px;
+}
+
+.inputContainer input {
+    border: 0px;
+    outline: 0px;
+    width: 100%;
+}
+
+.inputContainer input:active,
+.inputContainer input:focus {
+    border: 0px;
+    outline: 0px;
+
+}
+
+.inputContainer {
+    padding: 15px;
+    border: 0.4px solid #d0d0d0;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    width: 100%;
+    position: relative;
+}
+
+.inputContainer1 input:active,
+.inputContainer1 input:focus {
+    border: 0px;
+    outline: 0px;
+
+}
+
+.inputContainer1 input {
+    border: 0px;
+    outline: 0px;
+    width: 100%;
+}
+
+.inputContainer1 {
+    padding: 15px;
+    border: 0.4px solid #d0d0d0;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    width: 100%;
+    position: relative;
+}
+
+.logoBox {
+    padding: 15px;
+    display: flex;
+    margin: 5px;
+    flex-direction: column;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    border-radius: 10px;
+    background-color: #fff;
+    z-index: 1;
+
+}
+
+.logoBox a {
+    text-decoration: none;
+    color: purple;
+    padding: 4px;
+    border: 0.5px solid purple;
+    width: 100px;
+
+}
+
+.logoBox a:active,
+.logoBox a:focus,
+.logoBox a:hover {
+    background-color: purple;
+    color: #fff;
+    border: 0px;
+    outline: 0px;
+}
+
+.logoBox img {
+    margin-bottom: 10px;
+}
+
+.clogo {
+    width: 70%;
+    object-fit: cover;
+    margin-bottom: 15px;
+
+}
+
+.inputContainer label {
+    position: absolute;
+    top: -4%;
+}
+
+.inputContainer1 {
+    position: relative;
+
+}
+
+.inputContainer1 label {
+    position: absolute;
+    top: -18%;
+    background-color: #fff;
+    padding: 0px 6px;
+    font-size: 70%;
+}
+
+.wrap {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    width: 100%;
+
+}
+
+.serviceBox {
+    width: 24%;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.serviceName {
+    text-align: center;
+}
+
+.serviceBox .fa-solid {
+    font-size: 30px;
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    vertical-align: middle;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border: 2px solid purple;
+    border-radius: 50%;
+    color: purple;
+    margin-bottom: 15px;
+
+}
+
+.serviceBox .fa-solid:hover {
+    background-color: purple;
+    color: #fff;
+
+}
+
+.flinks li {
+    margin-bottom: 20px;
+    list-style: none;
+}
+
+.flinks {
+    margin-top: 20px;
+    padding-left: 0px;
+}
+.nav-link{
+    font-weight: 600;
+    color: purple;
+}
+
+.copryWrap {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.copyText {
+    padding: 3px 20px;
+    color: purple;
+    font-size: 80%;
+}
+
+.serviceBox {
+    text-decoration: none;
+    color: purple;
+}
+
+.inputContainer1 {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.amt {
+    width: 46.5%;
+}
+#contact span{
+    font-size: 85%;
+}
+#contact ul li{
+    font-size: 85%;
+    margin-bottom: 10px;
+}
+#contact ul{
+    
+    margin-top: 10px;
+}
+@media only screen and (max-width: 998px) {
+    .box {
+        width: 55%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .box {
+        width: 65%;
+    }
+.content {
+    font-size: 80%;
+}
+    .amt {
+        width: 100%;
+    }
+
+    .box1 {
+        width: 65%;
+    }
+
+    .login {
+
+        width: 100vw;
+        height: 90vh;
+
+    }
+
+    #welcome {
+        font-size: 12px;
+    }
+
+    .inputContainer1 {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 556px) {
+
+    .box,
+    .box1 {
+        width: 65%;
+    }
+        .footerSocials {
+           
+            margin-left: -2px;
+    
+        }
+
+    .box,
+    .box1 {
+        width: 75%;
+    }
+
+ 
+
+    .serviceBox {
+        width: 33%;
+        padding: 5px;
+
+    }
+
+    .serviceBox .fa-solid {
+        font-size: 30px;
+        width: 70px;
+        height: 70px;
+        padding: 10px;
+        margin-bottom: 15px;
+
+    }
+
+    .login1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        padding: 20px 5px;
+        background-color: #f6f6f6;
+
+    }
+
+    .navbar-brand {
+        width: 50%;
+    }
+        .serviceName {
+           font-size: 70%;
+        }
+
+}
+
+@media only screen and (max-width: 398px) {
+    .box {
+        width: 100%;
+    }
+
+    .box1 {
+        width: 100%;
+    }
+
+    .box,
+    .box1 {
+        width: 96%;
+    }
+
+    .navbar-brand {
+        width: 60%;
+    }
+    .mainTitle {
+        font-size: 160%;
+    }
+}
