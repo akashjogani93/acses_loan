@@ -16,7 +16,6 @@
                         <i style="font-size: 60px;margin-bottom:15px;color:#fff;" class="fa-solid fa-money-bill"></i>
                         <h6> Payment request</h6>
                     </li>
-
                 </ul>
             </div>
         </div>

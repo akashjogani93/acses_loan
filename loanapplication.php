@@ -7,13 +7,13 @@
     <title>Loan Application</title>
     <?php include_once('./links.php') ?>
     <script src="js/loan.js"></script>
-    <style>
+    <!-- <style>
         .error-message {
             color: red;
             margin-bottom: 2px;
             font-size:14px;  /* Adjust as needed to provide spacing between the field and the message */
         }
-    </style>
+    </style> -->
 </head>
 
 <body class="bg-white">
@@ -25,15 +25,15 @@
         <div style="border:0px solid #d9d9d9; border-radius:10px;" class="container">
             <div class="row p-0">
                 <div class="col p-3">
-                    <div class="container">
+                    <div class="container" id="contePrint">
                         <div class="row px-3 py-3">
                             <div class="col-md-6">
                                 <div class="inputContainer1 amt" style="">
                                     <label for="">Loan Amount</label>
-                                    <input type="text" />
+                                    <input type="text" id="loanAmtMain"/>
                                 </div>
                             </div>
-                            <div class="col-md-6">
+                            <!-- <div class="col-md-6">
                                 <div class="form-group">
                                     <div class="form-check form-check-inline">
                                         <input class="form-check-input" type="radio" name="exampleRadiosInline" id="exampleRadioInline1" value="0"  onchange="applicant()">
@@ -48,12 +48,9 @@
                                         </label>
                                     </div>
                                 </div>
-                            </div>
-                            
+                            </div> -->
                         </div>
-
                         <div class="row">
-                                
                             <div class="col-md-3 applicant">
                                 <div class="pb-2">
                                     <strong style="margin-bottom:15px;">Name of Applicant</strong>
@@ -116,7 +113,7 @@
                                 </div>
                                 <div class="inputContainer1" style="">
                                     <label for="">Applicant </label>
-                                    <input type="text" id="a_relatioship"  autocomplete="off" />
+                                    <input type="text" id="a_relationship"  autocomplete="off" />
                                 </div>
                             </div>
                             <div class="col-md-3 joint-applicant">
@@ -221,13 +218,6 @@
                                     <input type="text" id="j_email"  autocomplete="off" />
                                 </div>
                             </div>
-                            <!-- <div class="col-md-3">
-                                
-                            </div>
-                            <div class="col-md-3">
-                               
-                            </div>
-                       -->
                             <div class="col-md-3 applicant">
                                 <div class="pb-2">
                                     <strong style="margin-bottom:15px;">Permanent Address</strong>
@@ -246,50 +236,6 @@
                                     <input type="text" id="j_prmntaddress"  autocomplete="off" />
                                 </div>
                             </div>
-                            <!-- <div class="col-md-3 applicant">
-                                <div class="pb-2">
-                                    <strong style="margin-bottom:15px;">Tel No</strong>
-                                </div>
-                                <div class="inputContainer1" style="">
-                                    <label for="">Applicant </label>
-                                    <input type="text" />
-                                </div>
-                            </div>
-                            <div class="col-md-3 joint-applicant">
-                                <div class="pb-4 mb-2">
-                                    <strong style="margin-bottom:15px;"></strong>
-                                </div>
-                                <div class="inputContainer1" style="">
-                                    <label for="">Joint Applicant</label>
-                                    <input type="text" />
-                                </div>
-                            </div>
-                      
-                            <div class="col-md-3 applicant">
-                                <div class="pb-2">
-                                    <strong style="margin-bottom:15px;">Email</strong>
-                                </div>
-                                <div class="inputContainer1" style="">
-                                    <label for="">Applicant </label>
-                                    <input type="text" />
-                                </div>
-                            </div>
-                            <div class="col-md-3 joint-applicant">
-                                <div class="pb-4 mb-2">
-                                    <strong style="margin-bottom:15px;"></strong>
-                                </div>
-                                <div class="inputContainer1" style="">
-                                    <label for="">Joint Applicant</label>
-                                    <input type="text" />
-                                </div>
-                            </div> -->
-                            <!-- <div class="col-md-3">
-                               
-                            </div>
-                            <div class="col-md-3">
-                               
-                            </div> -->
-                        
                             <div class="col-md-3 applicant">
                                 <div class="pb-2">
                                     <strong style="margin-bottom:15px;">Residential Status</strong>
@@ -333,7 +279,7 @@
                                 </div>
                                 <div class="inputContainer1" style="">
                                     <label for="">Applicant </label>
-                                    <input type="text" id="a_maritual" autocomplete="off" />
+                                    <input type="text" id="a_marital" autocomplete="off" />
                                 </div>
                             </div>
                             <div class="col-md-3 joint-applicant">
@@ -342,7 +288,7 @@
                                 </div>
                                 <div class="inputContainer1" style="">
                                     <label for="">Joint Applicant</label>
-                                    <input type="text" id="j_maritual" autocomplete="off"/>
+                                    <input type="text" id="j_marital" autocomplete="off"/>
                                 </div>
                             </div>
                             <div class="col-md-3 applicant">
@@ -796,7 +742,7 @@
                                 </div>
                                 <div class="inputContainer1" style="">
                                     <label for="">Applicant </label>
-                                    <input type="text" id="a_bnkname" autocomplete="off" />
+                                    <input type="text" id="a_bnkname1" autocomplete="off" />
                                 </div>
                             </div>
                             <div class="col-md-3 joint-applicant">
@@ -805,7 +751,7 @@
                                 </div>
                                 <div class="inputContainer1" style="">
                                     <label for="">Joint Applicant</label>
-                                    <input type="text" id="j_bnkname" autocomplete="off" />
+                                    <input type="text" id="j_bnkname1" autocomplete="off" />
                                 </div>
                             </div>
 
@@ -1414,14 +1360,19 @@
                                 </div>
                             </div>
                         </div>
-                    <div class="row">
-                        <div class="col">
-                            <div class="inputContainer" style="border:0px; padding:0px;">
-                                <a id="submit" class="btn"
-                                    style="background-color:purple;color:#fff; width:100%;padding:15px;">Submit</a>
+                        <div class="row">
+                            <div class="col">
+                                <div class="inputContainer" style="border:0px; padding:0px;">
+                                    <a id="submit" class="btn" style="background-color:purple;color:#fff; width:100%;padding:15px;">Submit</a>
+                                    <a id="submit1" class="btn" style="background-color:purple;color:#fff; width:100%;padding:15px; display:none;">Print</a>
+                                </div>
+                            </div>
+                            <div class="col" id="bb" style="display:none">
+                                <div class="inputContainer" style="border:0px; padding:0px;">
+                                    <a id="back" class="btn btn-info" style="color:#fff; width:100%;padding:15px;">Back</a>
+                                </div>
                             </div>
                         </div>
-                    </div>
                     </div>
                 </div>
             </div>

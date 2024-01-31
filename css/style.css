@@ -258,7 +258,6 @@ strong {
 .serviceBox .fa-solid:hover {
     background-color: purple;
     color: #fff;
-
 }
 
 .flinks li {
@@ -275,12 +274,12 @@ strong {
     color: purple;
 }
 
-.copryWrap {
+.copryWrap 
+{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-
 }
 
 .copyText {

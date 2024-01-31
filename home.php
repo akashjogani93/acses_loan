@@ -55,8 +55,8 @@
                         class="btn w-auto">Secured Loans</a> </div>
             </div>
             <div class="col-md-4">
-                <div class="logoBox"><img src="./img/3.jpeg" class="d-block w-100" alt="..."> <a href="Hajj-&-Numrah.php"
-                        class="btn w-auto">  Hajj & Numrah</a> </div>
+                <div class="logoBox"><img src="./img/3.jpeg" class="d-block w-100" alt="..."> <a href="Hajj-&-umrah.php"
+                        class="btn w-auto">  Hajj & Umrah</a> </div>
             </div>
 
             <div class="col-md-4">

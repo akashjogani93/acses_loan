@@ -56,15 +56,19 @@
                             <a href="./vendors.php">Vendors</a>
                         </li>
                         <li class="links">
-
                             <a href="./vendorrequest.php">Vendors Requests</a>
                         </li>
                         <li class="links">
 
                             <a href="./vendorrequest.php">Payment Requests</a>
+                        </li>   
+                        <li class="links">
+                            <a href="./loanApplyDetails.php">Loan Apply Details</a>
                         </li>
                         <li class="links">
-
+                            <a href="./hajj_umrah.php">Hajj & Umrah</a>
+                        </li>
+                        <li class="links">
                             <a href="" id="logout1">Logout</a>
                         </li>
 
