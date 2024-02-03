@@ -96,11 +96,9 @@
                     <div class="serviceBox"><i class="fa-solid fa-passport"></i>
                         <span class="serviceName">Passport</span>
                     </div>
-                    <a href="./loanapplication.php" class="serviceBox"><i class="fa-solid fa-landmark"></i>
+                    <!-- <a href="./loanapplication.php" class="serviceBox"><i class="fa-solid fa-landmark"></i>
                         <span class="serviceName">Loan</span>
-                    </a>
-
-
+                    </a> -->
                 </div>
             </div>
         </div>

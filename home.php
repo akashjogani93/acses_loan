@@ -43,7 +43,7 @@
                         class="btn w-auto">Passport Seva</a> </div>
             </div>
             <div class="col-md-4">
-                <div class="logoBox"><img src="./img/7.jpeg" class="d-block w-100" alt="..."> <a href=""
+                <div class="logoBox"><img src="./img/7.jpeg" class="d-block w-100" alt="..."> <a href="loanapplication.php"
                         class="btn w-auto">Unsecured Loans</a></div>
             </div>
 
@@ -51,7 +51,7 @@
         <div class="row">
 
             <div class="col-md-4">
-                <div class="logoBox"><img src="./img/8.jpeg" class="d-block w-100" alt="..."> <a href=""
+                <div class="logoBox"><img src="./img/8.jpeg" class="d-block w-100" alt="..."> <a href="loanapplication.php"
                         class="btn w-auto">Secured Loans</a> </div>
             </div>
             <div class="col-md-4">
@@ -83,7 +83,8 @@ $('#logout').click(function(){
                     success: function (resultData) {
                          console.log(resultData)
                         resultData = JSON.parse(resultData)
-                        if (resultData.code == "200") {
+                        if (resultData.code == "200") 
+                        {
                              window.location.href = "http://acses.in/";
                            
                         } else {

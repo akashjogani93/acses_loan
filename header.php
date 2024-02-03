@@ -7,7 +7,7 @@ if (isset($_SESSION['isLogged'])) {
                 <a class="navbar-brand d-flex flex-row align-items-center" href="#"><img src="./img/logo.png"
                         style="" alt="">
                    
-                    <a href="#" id="logout" style="text-decoration:none; color:#000;">Logout</a>
+                    <a href="#" id="logout" style="text-decoration:none; color:#000;" class="btn btn-info">Logout</a>
                 
             </div>
         </nav>

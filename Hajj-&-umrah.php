@@ -29,7 +29,7 @@
     <div class="login1">
         <div class="box1">
             <div style="margin-bottom:15px;">
-                <center><a href="https://acses.in">  <img src="./img/logo.png" class="clogo" alt=""></a></center>
+                <!-- <center><a href="https://acses.in">  <img src="./img/logo.png" class="clogo" alt=""></a></center> -->
             </div>
             <h4 class="text-bold text-center mb-4">Hajj & Umrah</h4>
             <div class="container">

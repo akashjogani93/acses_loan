@@ -17,7 +17,7 @@
 </head>
 
 <body class="bg-white">
-    <?php include_once('./header1.php') ?>
+    <?php include_once('./header.php');?>
     <div>
         <div class="container pt-4">
             <h6 style="text-align:center;"><b> Loan Application</b></h6>
@@ -1382,5 +1382,33 @@
     </div>
     <?php include_once('./footer.php') ?>
 </body>
+<script>
+$(document).ready(
+    function(){
+$('#logout').click(function(){
+    $.ajax({
+         type: "POST",
+                    url: "./backend/logout.php",
+                    data: { },
+
+                    success: function (resultData) {
+                         console.log(resultData)
+                        resultData = JSON.parse(resultData)
+                        if (resultData.code == "200") 
+                        {
+                             window.location.href = "http://acses.in/";
+                           
+                        } else {
+                           alert("Something went wrong");
+                        }
+                    }
+
+    })
+     window.location.href = "./index.php";
+})
+}
+)
+
+</script>
 
 </html>

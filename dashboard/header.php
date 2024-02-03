@@ -71,10 +71,8 @@
                         <li class="links">
                             <a href="" id="logout1">Logout</a>
                         </li>
-
                     </ul>
                 </div>
-
             </div>
             <div class="col-md-10 px-0 ">
                 <div class="container-fluid px-0 mx-0">
