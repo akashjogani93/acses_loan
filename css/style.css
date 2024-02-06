@@ -120,10 +120,10 @@ strong {
 }
 
 .inputContainer input:active,
-.inputContainer input:focus {
+.inputContainer input:focus 
+{
     border: 0px;
     outline: 0px;
-
 }
 
 .inputContainer {
@@ -136,13 +136,15 @@ strong {
 }
 
 .inputContainer1 input:active,
-.inputContainer1 input:focus {
+.inputContainer1 input:focus,
+.inputContainer select:active,
+.inputContainer select:focus {
     border: 0px;
     outline: 0px;
 
 }
 
-.inputContainer1 input {
+.inputContainer1 input,select {
     border: 0px;
     outline: 0px;
     width: 100%;

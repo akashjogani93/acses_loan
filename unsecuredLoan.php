@@ -31,24 +31,11 @@
                                     <input type="text" id="loanAmtMain"/>
                                 </div>
                             </div>
-                            <!-- <div class="col-md-6">
-                                <div class="form-group">
-                                    <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="exampleRadiosInline" id="exampleRadioInline1" value="0"  onchange="applicant()">
-                                        <label class="form-check-label" for="exampleRadioInline1">
-                                        Applicant
-                                        </label>
-                                    </div>
-                                    <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="exampleRadiosInline" id="exampleRadioInline2" value="1" checked  onchange="applicant()">
-                                        <label class="form-check-label" for="exampleRadioInline2">
-                                            Joint-Applicant
-                                        </label>
-                                    </div>
-                                </div>
-                            </div> -->
                         </div>
                         <div class="row">
+                            <div class="col-md-12">
+                                <h4 class="mob-head"> <b>PERSONAL DETAILS</b></h4>
+                            </div>
                             <div class="col-md-3 applicant">
                                 <div class="pb-2">
                                     <strong style="margin-bottom:15px;">Name of Applicant</strong>
@@ -59,22 +46,21 @@
                                 </div>
                             </div>
                             <div class="col-md-3 joint-applicant">
-                                <div class="pb-4 mb-2">
-                                    <strong style="margin-bottom:15px;"></strong>
+                                    <div class="pb-4 mb-2">
+                                        <strong style="margin-bottom:15px;"></strong>
+                                    </div>
+                                    <div class="inputContainer1" style="">
+                                        <label for="">Joint Applicant</label>
+                                        <input type="text" id="j_name"   autocomplete="off"/>
+                                    </div>
                                 </div>
-                                <div class="inputContainer1" style="">
-                                    <label for="">Joint Applicant</label>
-                                    <input type="text" id="j_name"   autocomplete="off"/>
-                                </div>
-                            </div>
-
                             <div class="col-md-3 applicant">
                                 <div class="pb-2">
-                                    <strong style="margin-bottom:15px;">PAN Number</strong>
+                                    <strong style="margin-bottom:15px;">Father Name</strong>
                                 </div>
                                 <div class="inputContainer1" style="">
                                     <label for="">Applicant </label>
-                                    <input type="text" id="a_panno"  autocomplete="off"/>
+                                    <input type="text" id="a_fname"  autocomplete="off" />
                                 </div>
                             </div>
                             <div class="col-md-3 joint-applicant">
@@ -83,17 +69,16 @@
                                 </div>
                                 <div class="inputContainer1" style="">
                                     <label for="">Joint Applicant</label>
-                                    <input type="text" id="j_panno"  autocomplete="off"/>
+                                    <input type="text" id="j_fname"   autocomplete="off"/>
                                 </div>
                             </div>
-                        
                             <div class="col-md-3 applicant">
                                 <div class="pb-2">
-                                    <strong style="margin-bottom:15px;">Father's / Husband's Name</strong>
+                                    <strong style="margin-bottom:15px;">Spouse Name</strong>
                                 </div>
                                 <div class="inputContainer1" style="">
                                     <label for="">Applicant </label>
-                                    <input type="text" id="a_fathername"  autocomplete="off" />
+                                    <input type="text" id="a_sname"  autocomplete="off" />
                                 </div>
                             </div>
                             <div class="col-md-3 joint-applicant">
@@ -102,16 +87,16 @@
                                 </div>
                                 <div class="inputContainer1" style="">
                                     <label for="">Joint Applicant</label>
-                                    <input type="text" id="j_fathername"  autocomplete="off"/>
+                                    <input type="text" id="j_sname"   autocomplete="off"/>
                                 </div>
                             </div>
                             <div class="col-md-3 applicant">
                                 <div class="pb-2">
-                                    <strong style="margin-bottom:15px;">Relationship with Co-Applicant</strong>
+                                    <strong style="margin-bottom:15px;">Mother Name</strong>
                                 </div>
                                 <div class="inputContainer1" style="">
                                     <label for="">Applicant </label>
-                                    <input type="text" id="a_relationship"  autocomplete="off" />
+                                    <input type="text" id="a_mname"  autocomplete="off" />
                                 </div>
                             </div>
                             <div class="col-md-3 joint-applicant">
@@ -120,17 +105,16 @@
                                 </div>
                                 <div class="inputContainer1" style="">
                                     <label for="">Joint Applicant</label>
-                                    <input type="text" id="j_relationship"  autocomplete="off" />
+                                    <input type="text" id="j_mname"   autocomplete="off"/>
                                 </div>
                             </div>
-                        
                             <div class="col-md-3 applicant">
                                 <div class="pb-2">
-                                    <strong style="margin-bottom:15px;">Present Address</strong>
+                                    <strong style="margin-bottom:15px;">Date Of Birth</strong>
                                 </div>
                                 <div class="inputContainer1" style="">
                                     <label for="">Applicant </label>
-                                    <input type="text" id="a_prsntaddress"  autocomplete="off"/>
+                                    <input type="date" id="a_dob"  autocomplete="off" />
                                 </div>
                             </div>
                             <div class="col-md-3 joint-applicant">
@@ -139,16 +123,21 @@
                                 </div>
                                 <div class="inputContainer1" style="">
                                     <label for="">Joint Applicant</label>
-                                    <input type="text" id="j_prsntaddress"  autocomplete="off" />
+                                    <input type="date" id="j_dob"   autocomplete="off"/>
                                 </div>
                             </div>
                             <div class="col-md-3 applicant">
                                 <div class="pb-2">
-                                    <strong style="margin-bottom:15px;">Period of stay</strong>
+                                    <strong style="margin-bottom:15px;">Gender</strong>
                                 </div>
                                 <div class="inputContainer1" style="">
                                     <label for="">Applicant </label>
-                                    <input type="text" id="a_period"  autocomplete="off" />
+                                    <!-- <input type="date" id="a_dob"  autocomplete="off" /> -->
+                                    <select name="a_gender" id="a_gender">
+                                        <option value="">Select</option>
+                                        <option>Male</option>
+                                        <option>Female</option>
+                                    </select>
                                 </div>
                             </div>
                             <div class="col-md-3 joint-applicant">
@@ -157,17 +146,21 @@
                                 </div>
                                 <div class="inputContainer1" style="">
                                     <label for="">Joint Applicant</label>
-                                    <input type="text" id="j_period" autocomplete="off" />
+                                    <!-- <input type="date" id="j_dob"   autocomplete="off"/> -->
+                                    <select name="a_gender" id="a_gender">
+                                        <option value="">Select</option>
+                                        <option>Male</option>
+                                        <option>Female</option>
+                                    </select>
                                 </div>
                             </div>
-                        
                             <div class="col-md-3 applicant">
                                 <div class="pb-2">
-                                    <strong style="margin-bottom:15px;">Tel No</strong>
+                                    <strong style="margin-bottom:15px;">Number Of Dependents</strong>
                                 </div>
                                 <div class="inputContainer1" style="">
                                     <label for="">Applicant </label>
-                                    <input type="text" id="a_telno"  autocomplete="off"/>
+                                    <input type="text" id="a_depen"  autocomplete="off" />
                                 </div>
                             </div>
                             <div class="col-md-3 joint-applicant">
@@ -176,16 +169,16 @@
                                 </div>
                                 <div class="inputContainer1" style="">
                                     <label for="">Joint Applicant</label>
-                                    <input type="text" id="j_telno"  autocomplete="off"/>
+                                    <input type="text" id="j_depen"   autocomplete="off"/>
                                 </div>
                             </div>
                             <div class="col-md-3 applicant">
                                 <div class="pb-2">
-                                    <strong style="margin-bottom:15px;">Mobile No</strong>
+                                    <strong style="margin-bottom:15px;">Education</strong>
                                 </div>
                                 <div class="inputContainer1" style="">
                                     <label for="">Applicant </label>
-                                    <input type="text" id="a_mobno"  autocomplete="off" />
+                                    <input type="text" id="a_edu"  autocomplete="off" />
                                 </div>
                             </div>
                             <div class="col-md-3 joint-applicant">
@@ -194,10 +187,189 @@
                                 </div>
                                 <div class="inputContainer1" style="">
                                     <label for="">Joint Applicant</label>
-                                    <input type="text" id="j_mobno"  autocomplete="off" />
+                                    <input type="text" id="j_edu"   autocomplete="off"/>
                                 </div>
                             </div>
-                        
+                            <div class="col-md-3 applicant">
+                                <div class="pb-2">
+                                    <strong style="margin-bottom:15px;">Mobile</strong>
+                                </div>
+                                <div class="inputContainer1" style="">
+                                    <label for="">Applicant </label>
+                                    <input type="text" id="a_mobile"  autocomplete="off" />
+                                </div>
+                            </div>
+                            <div class="col-md-3 joint-applicant">
+                                <div class="pb-4 mb-2">
+                                    <strong style="margin-bottom:15px;"></strong>
+                                </div>
+                                <div class="inputContainer1" style="">
+                                    <label for="">Joint Applicant</label>
+                                    <input type="text" id="j_mobile"   autocomplete="off"/>
+                                </div>
+                            </div>
+                            <div class="col-md-3 applicant">
+                                <div class="pb-2">
+                                    <strong style="margin-bottom:15px;">Religion</strong>
+                                </div>
+                                <div class="inputContainer1" style="">
+                                    <label for="">Applicant </label>
+                                    <input type="text" id="a_religion"  autocomplete="off" />
+                                </div>
+                            </div>
+                            <div class="col-md-3 joint-applicant">
+                                <div class="pb-4 mb-2">
+                                    <strong style="margin-bottom:15px;"></strong>
+                                </div>
+                                <div class="inputContainer1" style="">
+                                    <label for="">Joint Applicant</label>
+                                    <input type="text" id="j_religion"   autocomplete="off"/>
+                                </div>
+                            </div>
+                            <div class="col-md-3 applicant">
+                                <div class="pb-2">
+                                    <strong style="margin-bottom:15px;">Pan</strong>
+                                </div>
+                                <div class="inputContainer1" style="">
+                                    <label for="">Applicant </label>
+                                    <input type="text" id="a_pan"  autocomplete="off" />
+                                </div>
+                            </div>
+                            <div class="col-md-3 joint-applicant">
+                                <div class="pb-4 mb-2">
+                                    <strong style="margin-bottom:15px;"></strong>
+                                </div>
+                                <div class="inputContainer1" style="">
+                                    <label for="">Joint Applicant</label>
+                                    <input type="text" id="j_pan" autocomplete="off"/>
+                                </div>
+                            </div>
+                            <div class="col-md-3 applicant">
+                                <div class="pb-2">
+                                    <strong style="margin-bottom:15px;">Driving Licence No</strong>
+                                </div>
+                                <div class="inputContainer1" style="">
+                                    <label for="">Applicant </label>
+                                    <input type="text" id="a_licenced"  autocomplete="off" />
+                                </div>
+                            </div>
+                            <div class="col-md-3 joint-applicant">
+                                <div class="pb-4 mb-2">
+                                    <strong style="margin-bottom:15px;"></strong>
+                                </div>
+                                <div class="inputContainer1" style="">
+                                    <label for="">Joint Applicant</label>
+                                    <input type="text" id="j_licenced" autocomplete="off"/>
+                                </div>
+                            </div>
+                            <div class="col-md-3 applicant">
+                                <div class="pb-2">
+                                    <strong style="margin-bottom:15px;">Driving Licence Expiry Date</strong>
+                                </div>
+                                <div class="inputContainer1" style="">
+                                    <label for="">Applicant </label>
+                                    <input type="date" id="a_expriy"  autocomplete="off" />
+                                </div>
+                            </div>
+                            <div class="col-md-3 joint-applicant">
+                                <div class="pb-4 mb-2">
+                                    <strong style="margin-bottom:15px;"></strong>
+                                </div>
+                                <div class="inputContainer1" style="">
+                                    <label for="">Joint Applicant</label>
+                                    <input type="date" id="j_expriy" autocomplete="off"/>
+                                </div>
+                            </div>
+                            <div class="col-md-3 applicant">
+                                <div class="pb-2">
+                                    <strong style="margin-bottom:15px;">Passport Number</strong>
+                                </div>
+                                <div class="inputContainer1" style="">
+                                    <label for="">Applicant </label>
+                                    <input type="text" id="a_passport"  autocomplete="off" />
+                                </div>
+                            </div>
+                            <div class="col-md-3 joint-applicant">
+                                <div class="pb-4 mb-2">
+                                    <strong style="margin-bottom:15px;"></strong>
+                                </div>
+                                <div class="inputContainer1" style="">
+                                    <label for="">Joint Applicant</label>
+                                    <input type="text" id="j_passport" autocomplete="off"/>
+                                </div>
+                            </div>
+                            <div class="col-md-3 applicant">
+                                <div class="pb-2">
+                                    <strong style="margin-bottom:15px;">Passport Expiry Date</strong>
+                                </div>
+                                <div class="inputContainer1" style="">
+                                    <label for="">Applicant </label>
+                                    <input type="date" id="a_passexpriy"  autocomplete="off" />
+                                </div>
+                            </div>
+                            <div class="col-md-3 joint-applicant">
+                                <div class="pb-4 mb-2">
+                                    <strong style="margin-bottom:15px;"></strong>
+                                </div>
+                                <div class="inputContainer1" style="">
+                                    <label for="">Joint Applicant</label>
+                                    <input type="date" id="j_passexpriy" autocomplete="off"/>
+                                </div>
+                            </div>
+                            <div class="col-md-3 applicant">
+                                <div class="pb-2">
+                                    <strong style="margin-bottom:15px;">Voter Id Number</strong>
+                                </div>
+                                <div class="inputContainer1" style="">
+                                    <label for="">Applicant </label>
+                                    <input type="text" id="a_voter"  autocomplete="off" />
+                                </div>
+                            </div>
+                            <div class="col-md-3 joint-applicant">
+                                <div class="pb-4 mb-2">
+                                    <strong style="margin-bottom:15px;"></strong>
+                                </div>
+                                <div class="inputContainer1" style="">
+                                    <label for="">Joint Applicant</label>
+                                    <input type="text" id="j_voter" autocomplete="off"/>
+                                </div>
+                            </div>
+                            <div class="col-md-3 applicant">
+                                <div class="pb-2">
+                                    <strong style="margin-bottom:15px;">CKYC Number</strong>
+                                </div>
+                                <div class="inputContainer1" style="">
+                                    <label for="">Applicant </label>
+                                    <input type="text" id="a_ckyc"  autocomplete="off" />
+                                </div>
+                            </div>
+                            <div class="col-md-3 joint-applicant">
+                                <div class="pb-4 mb-2">
+                                    <strong style="margin-bottom:15px;"></strong>
+                                </div>
+                                <div class="inputContainer1" style="">
+                                    <label for="">Joint Applicant</label>
+                                    <input type="text" id="j_ckyc" autocomplete="off"/>
+                                </div>
+                            </div>
+                            <div class="col-md-3 applicant">
+                                <div class="pb-2">
+                                    <strong style="margin-bottom:15px;">UPI ID/VPA</strong>
+                                </div>
+                                <div class="inputContainer1" style="">
+                                    <label for="">Applicant </label>
+                                    <input type="text" id="a_upivpa"  autocomplete="off" />
+                                </div>
+                            </div>
+                            <div class="col-md-3 joint-applicant">
+                                <div class="pb-4 mb-2">
+                                    <strong style="margin-bottom:15px;"></strong>
+                                </div>
+                                <div class="inputContainer1" style="">
+                                    <label for="">Joint Applicant</label>
+                                    <input type="text" id="j_upivpa" autocomplete="off"/>
+                                </div>
+                            </div>
                             <div class="col-md-3 applicant">
                                 <div class="pb-2">
                                     <strong style="margin-bottom:15px;">Email</strong>
@@ -213,7 +385,138 @@
                                 </div>
                                 <div class="inputContainer1" style="">
                                     <label for="">Joint Applicant</label>
-                                    <input type="text" id="j_email"  autocomplete="off" />
+                                    <input type="text" id="j_email" autocomplete="off"/>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt-4">
+                            <div class="col-md-12">
+                                <h4 class="mob-head"> <b>ADDRESS DETAILS</b></h4>
+                            </div>
+                            <div class="col-md-3 applicant">
+                                <div class="pb-2">
+                                    <strong style="margin-bottom:15px;">Present Address</strong>
+                                </div>
+                                <div class="inputContainer1" style="">
+                                    <label for="">Applicant </label>
+                                    <input type="text" id="a_presentadds"  autocomplete="off" />
+                                </div>
+                            </div>
+                            <div class="col-md-3 joint-applicant">
+                                <div class="pb-4 mb-2">
+                                    <strong style="margin-bottom:15px;"></strong>
+                                </div>
+                                <div class="inputContainer1" style="">
+                                    <label for="">Joint Applicant</label>
+                                    <input type="text" id="j_presentadds" autocomplete="off"/>
+                                </div>
+                            </div>
+                            <div class="col-md-3 applicant">
+                                <div class="pb-2">
+                                    <strong style="margin-bottom:15px;">Landmark</strong>
+                                </div>
+                                <div class="inputContainer1" style="">
+                                    <label for="">Applicant </label>
+                                    <input type="text" id="a_landmark"  autocomplete="off" />
+                                </div>
+                            </div>
+                            <div class="col-md-3 joint-applicant">
+                                <div class="pb-4 mb-2">
+                                    <strong style="margin-bottom:15px;"></strong>
+                                </div>
+                                <div class="inputContainer1" style="">
+                                    <label for="">Joint Applicant</label>
+                                    <input type="text" id="j_landmark" autocomplete="off"/>
+                                </div>
+                            </div>
+                            <div class="col-md-3 applicant">
+                                <div class="pb-2">
+                                    <strong style="margin-bottom:15px;">City</strong>
+                                </div>
+                                <div class="inputContainer1" style="">
+                                    <label for="">Applicant </label>
+                                    <input type="text" id="a_city"  autocomplete="off" />
+                                </div>
+                            </div>
+                            <div class="col-md-3 joint-applicant">
+                                <div class="pb-4 mb-2">
+                                    <strong style="margin-bottom:15px;"></strong>
+                                </div>
+                                <div class="inputContainer1" style="">
+                                    <label for="">Joint Applicant</label>
+                                    <input type="text" id="j_city" autocomplete="off"/>
+                                </div>
+                            </div>
+                            <div class="col-md-3 applicant">
+                                <div class="pb-2">
+                                    <strong style="margin-bottom:15px;">State</strong>
+                                </div>
+                                <div class="inputContainer1" style="">
+                                    <label for="">Applicant </label>
+                                    <input type="text" id="a_state"  autocomplete="off" />
+                                </div>
+                            </div>
+                            <div class="col-md-3 joint-applicant">
+                                <div class="pb-4 mb-2">
+                                    <strong style="margin-bottom:15px;"></strong>
+                                </div>
+                                <div class="inputContainer1" style="">
+                                    <label for="">Joint Applicant</label>
+                                    <input type="text" id="j_state" autocomplete="off"/>
+                                </div>
+                            </div>
+                            <div class="col-md-3 applicant">
+                                <div class="pb-2">
+                                    <strong style="margin-bottom:15px;">Pin Code</strong>
+                                </div>
+                                <div class="inputContainer1" style="">
+                                    <label for="">Applicant </label>
+                                    <input type="text" id="a_pin"  autocomplete="off" />
+                                </div>
+                            </div>
+                            <div class="col-md-3 joint-applicant">
+                                <div class="pb-4 mb-2">
+                                    <strong style="margin-bottom:15px;"></strong>
+                                </div>
+                                <div class="inputContainer1" style="">
+                                    <label for="">Joint Applicant</label>
+                                    <input type="text" id="j_pin" autocomplete="off"/>
+                                </div>
+                            </div>
+                            <div class="col-md-3 applicant">
+                                <div class="pb-2">
+                                    <strong style="margin-bottom:15px;">STD</strong>
+                                </div>
+                                <div class="inputContainer1" style="">
+                                    <label for="">Applicant </label>
+                                    <input type="text" id="a_std"  autocomplete="off" />
+                                </div>
+                            </div>
+                            <div class="col-md-3 joint-applicant">
+                                <div class="pb-4 mb-2">
+                                    <strong style="margin-bottom:15px;"></strong>
+                                </div>
+                                <div class="inputContainer1" style="">
+                                    <label for="">Joint Applicant</label>
+                                    <input type="text" id="j_std" autocomplete="off"/>
+                                </div>
+                            </div>
+                            <div class="col-md-3 applicant">
+                                <div class="pb-2">
+                                    <strong style="margin-bottom:15px;">Tel.</strong>
+                                </div>
+                                <div class="inputContainer1" style="">
+                                    <label for="">Applicant </label>
+                                    <input type="text" id="a_tel"  autocomplete="off" />
+                                </div>
+                            </div>
+                            <div class="col-md-3 joint-applicant">
+                                <div class="pb-4 mb-2">
+                                    <strong style="margin-bottom:15px;"></strong>
+                                </div>
+                                <div class="inputContainer1" style="">
+                                    <label for="">Joint Applicant</label>
+                                    <input type="text" id="j_tel" autocomplete="off"/>
                                 </div>
                             </div>
                             <div class="col-md-3 applicant">
@@ -222,7 +525,7 @@
                                 </div>
                                 <div class="inputContainer1" style="">
                                     <label for="">Applicant </label>
-                                    <input type="text" id="a_prmntaddress"  autocomplete="off"/>
+                                    <input type="text" id="a_peraddress"  autocomplete="off" />
                                 </div>
                             </div>
                             <div class="col-md-3 joint-applicant">
@@ -231,16 +534,16 @@
                                 </div>
                                 <div class="inputContainer1" style="">
                                     <label for="">Joint Applicant</label>
-                                    <input type="text" id="j_prmntaddress"  autocomplete="off" />
+                                    <input type="text" id="j_peraddress" autocomplete="off"/>
                                 </div>
                             </div>
                             <div class="col-md-3 applicant">
                                 <div class="pb-2">
-                                    <strong style="margin-bottom:15px;">Residential Status</strong>
+                                    <strong style="margin-bottom:15px;">Landmark</strong>
                                 </div>
                                 <div class="inputContainer1" style="">
                                     <label for="">Applicant </label>
-                                    <input type="text" id="a_status" autocomplete="off" />
+                                    <input type="text" id="a_landmarkper"  autocomplete="off" />
                                 </div>
                             </div>
                             <div class="col-md-3 joint-applicant">
@@ -249,16 +552,16 @@
                                 </div>
                                 <div class="inputContainer1" style="">
                                     <label for="">Joint Applicant</label>
-                                    <input type="text" id="j_status" autocomplete="off" />
+                                    <input type="text" id="j_landmarkper" autocomplete="off"/>
                                 </div>
                             </div>
                             <div class="col-md-3 applicant">
                                 <div class="pb-2">
-                                    <strong style="margin-bottom:15px;">Date of Birth</strong>
+                                    <strong style="margin-bottom:15px;">City</strong>
                                 </div>
                                 <div class="inputContainer1" style="">
                                     <label for="">Applicant </label>
-                                    <input type="text" id="a_dob" autocomplete="off" />
+                                    <input type="text" id="a_cityper"  autocomplete="off" />
                                 </div>
                             </div>
                             <div class="col-md-3 joint-applicant">
@@ -267,35 +570,16 @@
                                 </div>
                                 <div class="inputContainer1" style="">
                                     <label for="">Joint Applicant</label>
-                                    <input type="text" id="j_dob" autocomplete="off" />
-                                </div>
-                            </div>
-                       
-                            <div class="col-md-3 applicant">
-                                <div class="pb-2">
-                                    <strong style="margin-bottom:15px;">Maritual Status</strong>
-                                </div>
-                                <div class="inputContainer1" style="">
-                                    <label for="">Applicant </label>
-                                    <input type="text" id="a_marital" autocomplete="off" />
-                                </div>
-                            </div>
-                            <div class="col-md-3 joint-applicant">
-                                <div class="pb-4 mb-2">
-                                    <strong style="margin-bottom:15px;"></strong>
-                                </div>
-                                <div class="inputContainer1" style="">
-                                    <label for="">Joint Applicant</label>
-                                    <input type="text" id="j_marital" autocomplete="off"/>
+                                    <input type="text" id="j_cityper" autocomplete="off"/>
                                 </div>
                             </div>
                             <div class="col-md-3 applicant">
                                 <div class="pb-2">
-                                    <strong style="margin-bottom:15px;">You Belong to</strong>
+                                    <strong style="margin-bottom:15px;">State</strong>
                                 </div>
                                 <div class="inputContainer1" style="">
                                     <label for="">Applicant </label>
-                                    <input type="text" id="a_belong" autocomplete="off" />
+                                    <input type="text" id="a_stateper"  autocomplete="off" />
                                 </div>
                             </div>
                             <div class="col-md-3 joint-applicant">
@@ -304,35 +588,16 @@
                                 </div>
                                 <div class="inputContainer1" style="">
                                     <label for="">Joint Applicant</label>
-                                    <input type="text" id="j_belong" autocomplete="off" />
-                                </div>
-                            </div>
-                       
-                            <div class="col-md-3 applicant">
-                                <div class="pb-2">
-                                    <strong style="margin-bottom:15px;">No of Dependants</strong>
-                                </div>
-                                <div class="inputContainer1" style="">
-                                    <label for="">Applicant </label>
-                                    <input type="text" id="a_dependant" autocomplete="off" />
-                                </div>
-                            </div>
-                            <div class="col-md-3 joint-applicant">
-                                <div class="pb-4 mb-2">
-                                    <strong style="margin-bottom:15px;"></strong>
-                                </div>
-                                <div class="inputContainer1" style="">
-                                    <label for="">Joint Applicant</label>
-                                    <input type="text" id="j_dependant" autocomplete="off" />
+                                    <input type="text" id="j_stateper" autocomplete="off"/>
                                 </div>
                             </div>
                             <div class="col-md-3 applicant">
                                 <div class="pb-2">
-                                    <strong style="margin-bottom:15px;">Education</strong>
+                                    <strong style="margin-bottom:15px;">Pin Code</strong>
                                 </div>
                                 <div class="inputContainer1" style="">
                                     <label for="">Applicant </label>
-                                    <input type="text" id="a_education" autocomplete="off" />
+                                    <input type="text" id="a_pinper"  autocomplete="off" />
                                 </div>
                             </div>
                             <div class="col-md-3 joint-applicant">
@@ -341,1033 +606,545 @@
                                 </div>
                                 <div class="inputContainer1" style="">
                                     <label for="">Joint Applicant</label>
-                                    <input type="text" id="j_education" autocomplete="off" />
+                                    <input type="text" id="j_pinper" autocomplete="off"/>
+                                </div>
+                            </div>
+                            <div class="col-md-3 applicant">
+                                <div class="pb-2">
+                                    <strong style="margin-bottom:15px;">STD</strong>
+                                </div>
+                                <div class="inputContainer1" style="">
+                                    <label for="">Applicant </label>
+                                    <input type="text" id="a_stdper"  autocomplete="off" />
+                                </div>
+                            </div>
+                            <div class="col-md-3 joint-applicant">
+                                <div class="pb-4 mb-2">
+                                    <strong style="margin-bottom:15px;"></strong>
+                                </div>
+                                <div class="inputContainer1" style="">
+                                    <label for="">Joint Applicant</label>
+                                    <input type="text" id="j_stdper" autocomplete="off"/>
+                                </div>
+                            </div>
+                            <div class="col-md-3 applicant">
+                                <div class="pb-2">
+                                    <strong style="margin-bottom:15px;">Tel.</strong>
+                                </div>
+                                <div class="inputContainer1" style="">
+                                    <label for="">Applicant </label>
+                                    <input type="text" id="a_telper"  autocomplete="off" />
+                                </div>
+                            </div>
+                            <div class="col-md-3 joint-applicant">
+                                <div class="pb-4 mb-2">
+                                    <strong style="margin-bottom:15px;"></strong>
+                                </div>
+                                <div class="inputContainer1" style="">
+                                    <label for="">Joint Applicant</label>
+                                    <input type="text" id="j_telper" autocomplete="off"/>
                                 </div>
                             </div>
                         </div>
                         <div class="row mt-4">
                             <div class="col-md-12">
-                                <h4 class="mob-head"> <b> DETAILS OF OCCUPATION / PROFESSION / BUSINESS </b></h4>
+                                <h4 class="mob-head"> <b>COMPANY DETAILS</b></h4>
                             </div>
                             <div class="col-md-3 applicant">
-                                <div class="pb-2">
-                                    <strong style="margin-bottom:15px;">Name of Employer</strong>
-                                </div>
-                                <div class="inputContainer1" style="">
-                                    <label for="">Applicant </label>
-                                    <input type="text" id="a_empname" autocomplete="off" />
-                                </div>
-                            </div>
-                            <div class="col-md-3 joint-applicant">
-                                <div class="pb-4 mb-2">
-                                    <strong style="margin-bottom:15px;"></strong>
-                                </div>
-                                <div class="inputContainer1" style="">
-                                    <label for="">Joint Applicant</label>
-                                    <input type="text" id="j_empname" autocomplete="off" />
-                                </div>
-                            </div>
-
-                            <div class="col-md-3 applicant">
-                                <div class="pb-2">
-                                    <strong style="margin-bottom:15px;">Address with mobile number</strong>
-                                </div>
-                                <div class="inputContainer1" style="">
-                                    <label for="">Applicant </label>
-                                    <input type="text" id="a_adds" autocomplete="off"/>
-                                </div>
-                            </div>
-                            <div class="col-md-3 joint-applicant">
-                                <div class="pb-4 mb-2">
-                                    <strong style="margin-bottom:15px;"></strong>
-                                </div>
-                                <div class="inputContainer1" style="">
-                                    <label for="">Joint Applicant</label>
-                                    <input type="text" id="j_adds" autocomplete="off" />
-                                </div>
-                            </div>
-
-                            <div class="col-md-3 applicant">
-                                <div class="pb-2">
-                                    <strong style="margin-bottom:15px;">Employed Designation and number</strong>
-                                </div>
-                                <div class="inputContainer1" style="">
-                                    <label for="">Applicant </label>
-                                    <input type="text" id="a_empdesignation" autocomplete="off" />
-                                </div>
-                            </div>
-                            <div class="col-md-3 joint-applicant">
-                                <div class="pb-4 mb-2">
-                                    <strong style="margin-bottom:15px;"></strong>
-                                </div>
-                                <div class="inputContainer1" style="">
-                                    <label for="">Joint Applicant</label>
-                                    <input type="text" id="j_empdesignation" autocomplete="off" />
-                                </div>
-                            </div>
-
-                            <div class="col-md-3 applicant">
-                                <div class="pb-2">
-                                    <strong style="margin-bottom:15px;">No of years in present occupation/Business</strong>
-                                </div>
-                                <div class="inputContainer1" style="">
-                                    <label for="">Applicant </label>
-                                    <input type="text" id="a_years" autocomplete="off" />
-                                </div>
-                            </div>
-                            <div class="col-md-3 joint-applicant">
-                                <div class="pb-4 mb-2">
-                                    <strong style="margin-bottom:15px;"><br class="breaks"></strong>
-                                </div>
-                                <div class="inputContainer1" style="">
-                                    <label for="">Joint Applicant</label>
-                                    <input type="text" id="j_years" autocomplete="off"/>
-                                </div>
-                            </div>
-
-                            <div class="col-md-3 applicant">
-                                <div class="pb-2">
-                                    <strong style="margin-bottom:15px;">Length of service</strong>
-                                </div>
-                                <div class="inputContainer1" style="">
-                                    <label for="">Applicant </label>
-                                    <input type="text" id="a_length" autocomplete="off" />
-                                </div>
-                            </div>
-                            <div class="col-md-3 joint-applicant">
-                                <div class="pb-4 mb-2">
-                                    <strong style="margin-bottom:15px;"></strong>
-                                </div>
-                                <div class="inputContainer1" style="">
-                                    <label for="">Joint Applicant</label>
-                                    <input type="text" id="j_length" autocomplete="off" />
-                                </div>
-                            </div>
-
-                            <div class="col-md-3 applicant">
-                                <div class="pb-2">
-                                    <strong style="margin-bottom:15px;">Date of Retirement</strong>
-                                </div>
-                                <div class="inputContainer1" style="">
-                                    <label for="">Applicant </label>
-                                    <input type="text" id="a_retirement" autocomplete="off" />
-                                </div>
-                            </div>
-                            <div class="col-md-3 joint-applicant">
-                                <div class="pb-4 mb-2">
-                                    <strong style="margin-bottom:15px;"></strong>
-                                </div>
-                                <div class="inputContainer1" style="">
-                                    <label for="">Joint Applicant</label>
-                                    <input type="text" id="j_retirement" autocomplete="off" />
-                                </div>
-                            </div>
-                            
-                        </div>
-
-                        <div class="row mt-4">
-                            <div class="col-md-12">
-                                <h4 class="mob-head"> <b>INCOME STATEMENT</b></h4>
-                            </div>
-                            <div class="col-md-12">
-                                <div class="pb-2">
-                                    <strong style="margin-bottom:15px;">Gross salary/Income per month (salary sheet / I.T. Return, form No.16 attached)</strong>
-                                </div>
-                            </div>
-                            <div class="col-md-3 applicant" >
-                                <div class="inputContainer1" style="">
-                                    <label for="">Applicant </label>
-                                    <input type="text" id="a_gross" autocomplete="off"/>
-                                </div>
-                            </div>
-                            <div class="col-md-3 joint-applicant">
-                                <!-- <div class="pb-4 mb-2">
-                                    <strong style="margin-bottom:15px;"></strong>
-                                </div> -->
-                                <div class="inputContainer1 mob" style="">
-                                    <label for="">Joint Applicant</label>
-                                    <input type="text" id="j_gross" autocomplete="off" />
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="row mt-4">
-                            <div class="col-md-12">
-                                <h4 class="mob-head"> <b>Deductions</b></h4>
-                            </div>
-                            <div class="col-md-3 applicant">
-                                <div class="pb-2">
-                                    <strong style="margin-bottom:15px;">Income Tax</strong>
-                                </div>
-                                <div class="inputContainer1" style="">
-                                    <label for="">Applicant </label>
-                                    <input type="text" id="a_income" autocomplete="off"/>
-                                </div>
-                            </div>
-                            <div class="col-md-3 joint-applicant">
-                                <div class="pb-4 mb-2">
-                                    <strong style="margin-bottom:15px;"></strong>
-                                </div>
-                                <div class="inputContainer1" style="">
-                                    <label for="">Joint Applicant</label>
-                                    <input type="text"  id="j_income" autocomplete="off"/>
-                                </div>
-                            </div>
-
-                            <div class="col-md-3 applicant">
-                                <div class="pb-2">
-                                    <strong style="margin-bottom:15px;">Professional Tax</strong>
-                                </div>
-                                <div class="inputContainer1" style="">
-                                    <label for="">Applicant </label>
-                                    <input type="text" id="a_professional" autocomplete="off"/>
-                                </div>
-                            </div>
-                            <div class="col-md-3 joint-applicant">
-                                <div class="pb-4 mb-2">
-                                    <strong style="margin-bottom:15px;"></strong>
-                                </div>
-                                <div class="inputContainer1" style="">
-                                    <label for="">Joint Applicant</label>
-                                    <input type="text" id="j_professional" autocomplete="off" />
-                                </div>
-                            </div>
-
-                            <div class="col-md-3 applicant">
-                                <div class="pb-2">
-                                    <strong style="margin-bottom:15px;">Provident Fund</strong>
-                                </div>
-                                <div class="inputContainer1" style="">
-                                    <label for="">Applicant </label>
-                                    <input type="text" id="a_fund" autocomplete="off"/>
-                                </div>
-                            </div>
-                            <div class="col-md-3 joint-applicant">
-                                <div class="pb-4 mb-2">
-                                    <strong style="margin-bottom:15px;"></strong>
-                                </div>
-                                <div class="inputContainer1" style="">
-                                    <label for="">Joint Applicant</label>
-                                    <input type="text" id="j_fund" autocomplete="off" />
-                                </div>
-                            </div>
-
-                            <div class="col-md-3 applicant">
-                                <div class="pb-2">
-                                    <strong style="margin-bottom:15px;">Insurance Premium</strong>
-                                </div>
-                                <div class="inputContainer1" style="">
-                                    <label for="">Applicant </label>
-                                    <input type="text" id="a_insurance" autocomplete="off"/>
-                                </div>
-                            </div>
-                            <div class="col-md-3 joint-applicant">
-                                <div class="pb-4 mb-2">
-                                    <strong style="margin-bottom:15px;"></strong>
-                                </div>
-                                <div class="inputContainer1" style="">
-                                    <label for="">Joint Applicant</label>
-                                    <input type="text" id="j_insurance" autocomplete="off" />
-                                </div>
-                            </div>
-
-                            <div class="col-md-3 applicant">
-                                <div class="pb-2">
-                                    <strong style="margin-bottom:15px;">Other statutory deductions</strong>
-                                </div>
-                                <div class="inputContainer1" style="">
-                                    <label for="">Applicant </label>
-                                    <input type="text" id="a_statutory" autocomplete="off"/>
-                                </div>
-                            </div>
-                            <div class="col-md-3 joint-applicant">
-                                <div class="pb-4 mb-2">
-                                    <strong style="margin-bottom:15px;"></strong>
-                                </div>
-                                <div class="inputContainer1" style="">
-                                    <label for="">Joint Applicant</label>
-                                    <input type="text" id="j_statutory" autocomplete="off"/>
-                                </div>
-                            </div>
-
-                            <div class="col-md-3 applicant">
-                                <div class="pb-2">
-                                    <strong style="margin-bottom:15px;">Net Salary / Income p.m.</strong>
-                                </div>
-                                <div class="inputContainer1" style="">
-                                    <label for="">Applicant </label>
-                                    <input type="text" id="a_salary" autocomplete="off"/>
-                                </div>
-                            </div>
-                            <div class="col-md-3 joint-applicant">
-                                <div class="pb-4 mb-2">
-                                    <strong style="margin-bottom:15px;"></strong>
-                                </div>
-                                <div class="inputContainer1" style="">
-                                    <label for="">Joint Applicant</label>
-                                    <input type="text" id="j_salary" autocomplete="off"/>
-                                </div>
-                            </div>
-
-                            <div class="col-md-3 applicant">
-                                <div class="pb-2">
-                                    <strong style="margin-bottom:15px;">Other Income if any(Proof Attached)</strong>
-                                </div>
-                                <div class="inputContainer1" style="">
-                                    <label for="">Applicant </label>
-                                    <input type="text" id="a_proof" autocomplete="off" />
-                                </div>
-                            </div>
-                            <div class="col-md-3 joint-applicant">
-                                <div class="pb-4 mb-2">
-                                    <strong style="margin-bottom:15px;"></strong>
-                                </div>
-                                <div class="inputContainer1" style="">
-                                    <label for="">Joint Applicant</label>
-                                    <input type="text" id="j_proof" autocomplete="off" />
-                                </div>
-                            </div>
-                            
-                        </div>
-
-                        <div class="row mt-4">
-                            <div class="col-md-12">
-                                <h4 class="mob-head"> <b>DETAILS OF BANK ACCOUNTS</b></h4>
-                            </div>
-                            <div class="col-md-3 applicant">
-                                <div class="pb-2">
-                                    <strong style="margin-bottom:15px;">Name of the Bank/Branch</strong>
-                                </div>
-                                <div class="inputContainer1" style="">
-                                    <label for="">Applicant </label>
-                                    <input type="text" id="a_bnkname" autocomplete="off"/>
-                                </div>
-                            </div>
-                            <div class="col-md-3 joint-applicant">
-                                <div class="pb-4 mb-2">
-                                    <strong style="margin-bottom:15px;"></strong>
-                                </div>
-                                <div class="inputContainer1" style="">
-                                    <label for="">Joint Applicant</label>
-                                    <input type="text" id="j_bnkname" autocomplete="off"/>
-                                </div>
-                            </div>
-
-                            <div class="col-md-3 applicant">
-                                <div class="pb-2">
-                                    <strong style="margin-bottom:15px;">Type/s of the Account</strong>
-                                </div>
-                                <div class="inputContainer1" style="">
-                                    <label for="">Applicant </label>
-                                    <input type="text" id="a_account" autocomplete="off" />
-                                </div>
-                            </div>
-                            <div class="col-md-3 joint-applicant">
-                                <div class="pb-4 mb-2">
-                                    <strong style="margin-bottom:15px;"></strong>
-                                </div>
-                                <div class="inputContainer1" style="">
-                                    <label for="">Joint Applicant</label>
-                                    <input type="text" id="j_account" autocomplete="off" />
-                                </div>
-                            </div>
-
-                            <div class="col-md-3 applicant">
-                                <div class="pb-2">
-                                    <strong style="margin-bottom:15px;">Account Number/s</strong>
-                                </div>
-                                <div class="inputContainer1" style="">
-                                    <label for="">Applicant </label>
-                                    <input type="text" id="a_accno" autocomplete="off"/>
-                                </div>
-                            </div>
-                            <div class="col-md-3 joint-applicant">
-                                <div class="pb-4 mb-2">
-                                    <strong style="margin-bottom:15px;"></strong>
-                                </div>
-                                <div class="inputContainer1" style="">
-                                    <label for="">Joint Applicant</label>
-                                    <input type="text" id="j_accno" autocomplete="off"/>
-                                </div>
-                            </div>
-
-                            <div class="col-md-3 applicant">
-                                <div class="pb-2">
-                                    <strong style="margin-bottom:15px;">Since When</strong>
-                                </div>
-                                <div class="inputContainer1" style="">
-                                    <label for="">Applicant </label>
-                                    <input type="text" id="a_since" autocomplete="off" />
-                                </div>
-                            </div>
-                            <div class="col-md-3 joint-applicant">
-                                <div class="pb-4 mb-2">
-                                    <strong style="margin-bottom:15px;"></strong>
-                                </div>
-                                <div class="inputContainer1" style="">
-                                    <label for="">Joint Applicant</label>
-                                    <input type="text" id="j_since" autocomplete="off" />
-                                </div>
-                            </div>
-
-                            <div class="col-md-3 applicant">
-                                <div class="pb-2">
-                                    <strong style="margin-bottom:15px;">Average credit balance for last 6 months </strong>
-                                </div>
-                                <div class="inputContainer1" style="">
-                                    <label for="">Applicant </label>
-                                    <input type="text" id="a_average" autocomplete="off"/>
-                                </div>
-                            </div>
-                            <div class="col-md-3 joint-applicant">
-                                <div class="pb-4 mb-2">
-                                    <strong style="margin-bottom:15px;"><br class="breaks"></strong>
-                                </div>
-                                <div class="inputContainer1" style="">
-                                    <label for="">Joint Applicant</label>
-                                    <input type="text" id="j_average" autocomplete="off" />
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="row mt-4">
-                            <div class="col-md-12">
-                                <h4 class="mob-head"> <b>DETAILS OF EXISTING LOAN FROM OTHER BANKS</b></h4>
-                            </div>
-                            <div class="col-md-3 applicant">
-                                <div class="pb-2">
-                                    <strong style="margin-bottom:15px;">Name of Bank/Branch</strong>
-                                </div>
-                                <div class="inputContainer1" style="">
-                                    <label for="">Applicant </label>
-                                    <input type="text" id="a_bnkname1" autocomplete="off" />
-                                </div>
-                            </div>
-                            <div class="col-md-3 joint-applicant">
-                                <div class="pb-4 mb-2">
-                                    <strong style="margin-bottom:15px;"></strong>
-                                </div>
-                                <div class="inputContainer1" style="">
-                                    <label for="">Joint Applicant</label>
-                                    <input type="text" id="j_bnkname1" autocomplete="off" />
-                                </div>
-                            </div>
-
-                            <div class="col-md-3 applicant">
-                                <div class="pb-2">
-                                    <strong style="margin-bottom:15px;">Type of Loan Availed</strong>
-                                </div>
-                                <div class="inputContainer1" style="">
-                                    <label for="">Applicant </label>
-                                    <input type="text" id="a_loantype" autocomplete="off" />
-                                </div>
-                            </div>
-                            <div class="col-md-3 joint-applicant">
-                                <div class="pb-4 mb-2">
-                                    <strong style="margin-bottom:15px;"></strong>
-                                </div>
-                                <div class="inputContainer1" style="">
-                                    <label for="">Joint Applicant</label>
-                                    <input type="text" id="j_loantype" autocomplete="off" />
-                                </div>
-                            </div>
-
-                            <div class="col-md-3 applicant">
-                                <div class="pb-2">
-                                    <strong style="margin-bottom:15px;">Amount of loan Availed</strong>
-                                </div>
-                                <div class="inputContainer1" style="">
-                                    <label for="">Applicant </label>
-                                    <input type="text" id="a_loanamt" autocomplete="off"/>
-                                </div>
-                            </div>
-                            <div class="col-md-3 joint-applicant">
-                                <div class="pb-4 mb-2">
-                                    <strong style="margin-bottom:15px;"></strong>
-                                </div>
-                                <div class="inputContainer1" style="">
-                                    <label for="">Joint Applicant</label>
-                                    <input type="text" id="j_loanamt" autocomplete="off" />
-                                </div>
-                            </div>
-
-                            <div class="col-md-3 applicant">
-                                <div class="pb-2">
-                                    <strong style="margin-bottom:15px;">Present outstanding</strong>
-                                </div>
-                                <div class="inputContainer1" style="">
-                                    <label for="">Applicant </label>
-                                    <input type="text" id="a_present" autocomplete="off" />
-                                </div>
-                            </div>
-                            <div class="col-md-3 joint-applicant">
-                                <div class="pb-4 mb-2">
-                                    <strong style="margin-bottom:15px;"></strong>
-                                </div>
-                                <div class="inputContainer1" style="">
-                                    <label for="">Joint Applicant</label>
-                                    <input type="text" id="j_present" autocomplete="off"/>
-                                </div>
-                            </div>
-
-                            <div class="col-md-3 applicant">
-                                <div class="pb-2">
-                                    <strong style="margin-bottom:15px;">Security Offered </strong>
-                                </div>
-                                <div class="inputContainer1" style="">
-                                    <label for="">Applicant </label>
-                                    <input type="text" id="a_security" autocomplete="off"/>
-                                </div>
-                            </div>
-                            <div class="col-md-3 joint-applicant">
-                                <div class="pb-4 mb-2">
-                                    <strong style="margin-bottom:15px;"></strong>
-                                </div>
-                                <div class="inputContainer1" style="">
-                                    <label for="">Joint Applicant</label>
-                                    <input type="text" id="j_security" autocomplete="off" />
-                                </div>
-                            </div>
-
-                            <div class="col-md-3 applicant">
-                                <div class="pb-2">
-                                    <strong style="margin-bottom:15px;">Repayment Plan </strong>
-                                </div>
-                                <div class="inputContainer1" style="">
-                                    <label for="">Applicant </label>
-                                    <input type="text" id="a_repayment" autocomplete="off" />
-                                </div>
-                            </div>
-                            <div class="col-md-3 joint-applicant">
-                                <div class="pb-4 mb-2">
-                                    <strong style="margin-bottom:15px;"></strong>
-                                </div>
-                                <div class="inputContainer1" style="">
-                                    <label for="">Joint Applicant</label>
-                                    <input type="text" id="j_repayment" autocomplete="off" />
-                                </div>
-                            </div>
-
-                            <div class="col-md-3 applicant">
-                                <div class="pb-2">
-                                    <strong style="margin-bottom:15px;">Amount of Default if any </strong>
-                                </div>
-                                <div class="inputContainer1" style="">
-                                    <label for="">Applicant </label>
-                                    <input type="text" id="a_amtdefault" autocomplete="off" />
-                                </div>
-                            </div>
-                            <div class="col-md-3 joint-applicant">
-                                <div class="pb-4 mb-2">
-                                    <strong style="margin-bottom:15px;"></strong>
-                                </div>
-                                <div class="inputContainer1" style="">
-                                    <label for="">Joint Applicant</label>
-                                    <input type="text" id="j_amtdefault" autocomplete="off"/>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="row mt-4">
-                            <div class="col-md-12">
-                                <h4 class="mob-head"> <b>DETAILS OF OTHER LIABILITIES</b></h4>
-                            </div>
-                            <div class="col-md-3 applicant">
-                                <div class="pb-2">
-                                    <strong style="margin-bottom:15px;">Loans from Employer.</strong>
-                                </div>
-                                <div class="inputContainer1" style="">
-                                    <label for="">Applicant </label>
-                                    <input type="text" id="a_emploan" autocomplete="off"/>
-                                </div>
-                            </div>
-                            <div class="col-md-3 joint-applicant">
-                                <div class="pb-4 mb-2">
-                                    <strong style="margin-bottom:15px;"></strong>
-                                </div>
-                                <div class="inputContainer1" style="">
-                                    <label for="">Joint Applicant</label>
-                                    <input type="text" id="j_emploan" autocomplete="off" />
-                                </div>
-                            </div>
-
-                            <div class="col-md-3 applicant">
-                                <div class="pb-2">
-                                    <strong style="margin-bottom:15px;">Loans from friends/liabilities</strong>
-                                </div>
-                                <div class="inputContainer1" style="">
-                                    <label for="">Applicant </label>
-                                    <input type="text" id="a_frndsloan" autocomplete="off"/>
-                                </div>
-                            </div>
-                            <div class="col-md-3 joint-applicant">
-                                <div class="pb-4 mb-2">
-                                    <strong style="margin-bottom:15px;"></strong>
-                                </div>
-                                <div class="inputContainer1" style="">
-                                    <label for="">Joint Applicant</label>
-                                    <input type="text" id="j_frndsloan" autocomplete="off" />
-                                </div>
-                            </div>
-
-                            <div class="col-md-3 applicant">
-                                <div class="pb-2">
-                                    <strong style="margin-bottom:15px;">Materials/Assets purchased from the seller on credit.</strong>
-                                </div>
-                                <div class="inputContainer1" style="">
-                                    <label for="">Applicant </label>
-                                    <input type="text" id="a_purchased" autocomplete="off" />
-                                </div>
-                            </div>
-                            <div class="col-md-3 joint-applicant">
-                                <div class="pb-4 mb-2">
-                                    <strong style="margin-bottom:15px;"><br class="breaks"></strong>
-                                </div>
-                                <div class="inputContainer1" style="">
-                                    <label for="">Joint Applicant</label>
-                                    <input type="text" id="j_purchased" autocomplete="off"/>
-                                </div>
-                            </div>
-
-                            <div class="col-md-3 applicant">
-                                <div class="pb-2">
-                                    <strong style="margin-bottom:15px;">Other liabilities.<br class="breaks"><br class="breaks"></strong>
-                                </div>
-                                <div class="inputContainer1" style="">
-                                    <label for="">Applicant </label>
-                                    <input type="text" id="a_othrliabilities" autocomplete="off" />
-                                </div>
-                            </div>
-                            <div class="col-md-3 joint-applicant">
-                                <div class="pb-4 mb-2">
-                                    <strong style="margin-bottom:15px;"><br class="breaks"></strong>
-                                </div>
-                                <div class="inputContainer1" style="">
-                                    <label for="">Joint Applicant</label>
-                                    <input type="text" id="j_othrliabilities" autocomplete="off"/>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="row mt-4">
-                            <div class="col-md-12">
-                                <h4 class="mob-head"> <b>IF CREDIT CARD HOLDER/S DETAILS OF CREDIT CARD/S</b></h4>
-                            </div>
-                            <div class="col-md-3 applicant">
-                                <div class="pb-2">
-                                    <strong style="margin-bottom:15px;">Name of Issuing Bank/Agency</strong>
-                                </div>
-                                <div class="inputContainer1" style="">
-                                    <label for="">Applicant </label>
-                                    <input type="text" id="a_issuingbnk"autocomplete="off" />
-                                </div>
-                            </div>
-                            <div class="col-md-3 joint-applicant">
-                                <div class="pb-4 mb-2">
-                                    <strong style="margin-bottom:15px;"></strong>
-                                </div>
-                                <div class="inputContainer1" style="">
-                                    <label for="">Joint Applicant</label>
-                                    <input type="text" id="j_issuingbnk" autocomplete="off"/>
-                                </div>
-                            </div>
-
-                            <div class="col-md-3 applicant">
-                                <div class="pb-2">
-                                    <strong style="margin-bottom:15px;">Credit Card number</strong>
-                                </div>
-                                <div class="inputContainer1" style="">
-                                    <label for="">Applicant </label>
-                                    <input type="text" id="a_cardno" autocomplete="off"/>
-                                </div>
-                            </div>
-                            <div class="col-md-3 joint-applicant">
-                                <div class="pb-4 mb-2">
-                                    <strong style="margin-bottom:15px;"></strong>
-                                </div>
-                                <div class="inputContainer1" style="">
-                                    <label for="">Joint Applicant</label>
-                                    <input type="text" id="j_cardno" autocomplete="off" />
-                                </div>
-                            </div>
-
-                            <div class="col-md-3 applicant">
-                                <div class="pb-2">
-                                    <strong style="margin-bottom:15px;">Expiry Date</strong>
-                                </div>
-                                <div class="inputContainer1" style="">
-                                    <label for="">Applicant </label>
-                                    <input type="text" id="a_expdate" autocomplete="off"/>
-                                </div>
-                            </div>
-                            <div class="col-md-3 joint-applicant">
-                                <div class="pb-4 mb-2">
-                                    <strong style="margin-bottom:15px;">    </strong>
-                                </div>
-                                <div class="inputContainer1" style="">
-                                    <label for="">Joint Applicant</label>
-                                    <input type="text" id="j_expdate" autocomplete="off"/>
-                                </div>
-                            </div>
-
-                            <div class="col-md-3 applicant">
-                                <div class="pb-2">
-                                    <strong style="margin-bottom:15px;">Credit Limit</strong>
-                                </div>
-                                <div class="inputContainer1" style="">
-                                    <label for="">Applicant </label>
-                                    <input type="text" id="a_limit" autocomplete="off" />
-                                </div>
-                            </div>
-                            <div class="col-md-3 joint-applicant">
-                                <div class="pb-4 mb-2">
-                                    <strong style="margin-bottom:15px;"></strong>
-                                </div>
-                                <div class="inputContainer1" style="">
-                                    <label for="">Joint Applicant</label>
-                                    <input type="text" id="j_limit" autocomplete="off"/>
-                                </div>
-                            </div>
-
-                            <div class="col-md-3 applicant">
-                                <div class="pb-2">
-                                    <strong style="margin-bottom:15px;">Present O/S Amount</strong>
-                                </div>
-                                <div class="inputContainer1" style="">
-                                    <label for="">Applicant </label>
-                                    <input type="text" id="a_presentamt" autocomplete="off"/>
-                                </div>
-                            </div>
-                            <div class="col-md-3 joint-applicant">
-                                <div class="pb-4 mb-2">
-                                    <strong style="margin-bottom:15px;"></strong>
-                                </div>
-                                <div class="inputContainer1" style="">
-                                    <label for="">Joint Applicant</label>
-                                    <input type="text" id="j_presentamt" autocomplete="off" />
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="row mt-4">
-                            <div class="col-md-12">
-                                <h4 class="mob-head"> <b>DETAILS OF ASSETS</b></h4>
-                            </div>
-                            <div class="col-md-3 applicant">
-                                <div class="pb-2">
-                                    <strong style="margin-bottom:15px;">Cash</strong>
-                                </div>
-                                <div class="inputContainer1" style="">
-                                    <label for="">Applicant </label>
-                                    <input type="text" id="a_cash" autocomplete="off" />
-                                </div>
-                            </div>
-                            <div class="col-md-3 joint-applicant">
-                                <div class="pb-4 mb-2">
-                                    <strong style="margin-bottom:15px;"></strong>
-                                </div>
-                                <div class="inputContainer1" style="">
-                                    <label for="">Joint Applicant</label>
-                                    <input type="text" id="j_cash" autocomplete="off"/>
-                                </div>
-                            </div>
-
-                            <div class="col-md-3 applicant">
-                                <div class="pb-2">
-                                    <strong style="margin-bottom:15px;">Deposits with Bank</strong>
-                                </div>
-                                <div class="inputContainer1" style="">
-                                    <label for="">Applicant </label>
-                                    <input type="text" id="a_deposit" autocomplete="off"/>
-                                </div>
-                            </div>
-                            <div class="col-md-3 joint-applicant">
-                                <div class="pb-4 mb-2">
-                                    <strong style="margin-bottom:15px;"></strong>
-                                </div>
-                                <div class="inputContainer1" style="">
-                                    <label for="">Joint Applicant</label>
-                                    <input type="text" id="j_deposit" autocomplete="off"/>
-                                </div>
-                            </div>
-
-                            <div class="col-md-3 applicant">
-                                <div class="pb-2">
-                                    <strong style="margin-bottom:15px;">Immovable assets/Properties With address & value</strong>
-                                </div>
-                                <div class="inputContainer1" style="">
-                                    <label for="">Applicant </label>
-                                    <input type="text" id="a_immovable" autocomplete="off" />
-                                </div>
-                            </div>
-                            <div class="col-md-3 joint-applicant">
-                                <div class="pb-4 mb-2">
-                                    <strong style="margin-bottom:15px;">  <br class="breaks">  </strong>
-                                </div>
-                                <div class="inputContainer1" style="">
-                                    <label for="">Joint Applicant</label>
-                                    <input type="text" id="j_immovable" autocomplete="off" />
-                                </div>
-                            </div>
-
-                            <div class="col-md-3 applicant">
-                                <div class="pb-2">
-                                    <strong style="margin-bottom:15px;">Movable assets <br class="breaks"><br class="breaks"></strong>
-                                </div>
-                                <div class="inputContainer1" style="">
-                                    <label for="">Applicant </label>
-                                    <input type="text" id="a_movable" autocomplete="off" />
-                                </div>
-                            </div>
-                            <div class="col-md-3 joint-applicant">
-                                <div class="pb-4 mb-2">
-                                    <strong style="margin-bottom:15px;"><br class="breaks"></strong>
-                                </div>
-                                <div class="inputContainer1" style="">
-                                    <label for="">Joint Applicant</label>
-                                    <input type="text" id="j_movable" autocomplete="off" />
-                                </div>
-                            </div>
-
-                            <div class="col-md-3 applicant">
-                                <div class="pb-2">
-                                    <strong style="margin-bottom:15px;">Investments (Specify each)</strong>
-                                </div>
-                                <div class="inputContainer1" style="">
-                                    <label for="">Applicant </label>
-                                    <input type="text" id="a_investment" autocomplete="off"/>
-                                </div>
-                            </div>
-                            <div class="col-md-3 joint-applicant">
-                                <div class="pb-4 mb-2">
-                                    <strong style="margin-bottom:15px;"></strong>
-                                </div>
-                                <div class="inputContainer1" style="">
-                                    <label for="">Joint Applicant</label>
-                                    <input type="text" id="j_investment" autocomplete="off" />
-                                </div>
-                            </div>
-
-                            <div class="col-md-3 applicant">
-                                <div class="pb-2">
-                                    <strong style="margin-bottom:15px;">Others(Please specify)</strong>
-                                </div>
-                                <div class="inputContainer1" style="">
-                                    <label for="">Applicant </label>
-                                    <input type="text" id="a_others" autocomplete="off" />
-                                </div>
-                            </div>
-                            <div class="col-md-3 joint-applicant">
-                                <div class="pb-4 mb-2">
-                                    <strong style="margin-bottom:15px;"></strong>
-                                </div>
-                                <div class="inputContainer1" style="">
-                                    <label for="">Joint Applicant</label>
-                                    <input type="text" id="j_others" autocomplete="off" />
-                                </div>
-                            </div>
-
-                            <div class="col-md-3 applicant">
-                                <div class="pb-2">
-                                    <strong style="margin-bottom:15px;">Total</strong>
-                                </div>
-                                <div class="inputContainer1" style="">
-                                    <label for="">Applicant </label>
-                                    <input type="text" id="a_total" autocomplete="off"/>
-                                </div>
-                            </div>
-                            <div class="col-md-3 joint-applicant">
-                                <div class="pb-4 mb-2">
-                                    <strong style="margin-bottom:15px;"></strong>
-                                </div>
-                                <div class="inputContainer1" style="">
-                                    <label for="">Joint Applicant</label>
-                                    <input type="text" id="j_total" autocomplete="off" />
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="row mt-4">
-                            <div class="col-md-12">
-                                <h4 class="mob-head"> <b>DETAILS OF COLLATERAL SECURITY OFFERED:</b></h4>
-                            </div>
-                            <div class="col-md-5">
-                                <div class="pb-2">
-                                    <strong style="margin-bottom:15px;">Description of Property(With full Postal Address)</strong>
-                                </div>
-                                <div class="inputContainer1" style="">
-                                    <label for="">Applicant </label>
-                                    <input type="text" id="description" autocomplete="off" />
-                                </div>
-                            </div>
-
-                            <div class="col-md-3 ">
-                                <div class="pb-2">
-                                    <strong style="margin-bottom:15px;">Owner of the Property</strong>
-                                </div>
-                                <div class="inputContainer1" style="">
-                                    <label for="">Applicant </label>
-                                    <input type="text" id="owner" autocomplete="off" />
-                                </div>
-                            </div>
-
-                            <div class="col-md-3">
-                                <div class="pb-2">
-                                    <strong style="margin-bottom:15px;">Value of Property</strong>
-                                </div>
-                                <div class="inputContainer1" style="">
-                                    <label for="">Applicant </label>
-                                    <input type="text" id="value" autocomplete="off" />
-                                </div>
-                            </div>
-
-                            <div class="col-md-5">
-                                <div class="pb-2">
-                                    <strong style="margin-bottom:15px;">DETAILS OF COLLATERAL SECURITY OTHER THAN PROPERTY </strong>
-                                </div>
-                                <div class="inputContainer1" style="">
-                                    <label for="">Applicant </label>
-                                    <input type="text" id="collateral" autocomplete="off" />
-                                </div>
-                            </div>
-                            
-                        </div>
-
-                        <div class="row mt-4">
-                            <div class="col-md-12">
-                                <h4 class="mob-head"> <b>GUARANTOR/S:(Attach Guarantor’s Consent letter)</b></h4>
-                            </div>
-                            <div class="col-md-4">
                                 <div class="pb-2">
                                     <strong style="margin-bottom:15px;">Name</strong>
                                 </div>
                                 <div class="inputContainer1" style="">
-                                    <label for="">Guarantor-I </label>
-                                    <input type="text" id="gi_name" autocomplete="off" />
+                                    <label for="">Applicant </label>
+                                    <input type="text" id="a_cmpname"  autocomplete="off" />
                                 </div>
                             </div>
-                            <div class="col-md-4">
+                            <div class="col-md-3 joint-applicant">
                                 <div class="pb-4 mb-2">
                                     <strong style="margin-bottom:15px;"></strong>
                                 </div>
                                 <div class="inputContainer1" style="">
-                                    <label for="">Guarantor-II</label>
-                                    <input type="text" id="gii_name" autocomplete="off"/>
+                                    <label for="">Joint Applicant</label>
+                                    <input type="text" id="j_cmpname" autocomplete="off"/>
                                 </div>
                             </div>
-                            <div class="col-md-4">
-                                <div class="pb-4 mb-2">
-                                    <strong style="margin-bottom:15px;"></strong>
-                                </div>
-                                <div class="inputContainer1" style="">
-                                    <label for="">Guarantor-III</label>
-                                    <input type="text" id="giii_name" autocomplete="off" />
-                                </div>
-                            </div>
-
-                            <div class="col-md-4">
+                            <div class="col-md-3 applicant">
                                 <div class="pb-2">
-                                    <strong style="margin-bottom:15px;">Address</strong>
+                                    <strong style="margin-bottom:15px;">City</strong>
                                 </div>
                                 <div class="inputContainer1" style="">
-                                    <label for="">Guarantor-I </label>
-                                    <input type="text" id="gi_address" autocomplete="off" />
+                                    <label for="">Applicant </label>
+                                    <input type="text" id="a_cmpcity"  autocomplete="off" />
                                 </div>
                             </div>
-                            <div class="col-md-4">
+                            <div class="col-md-3 joint-applicant">
                                 <div class="pb-4 mb-2">
                                     <strong style="margin-bottom:15px;"></strong>
                                 </div>
                                 <div class="inputContainer1" style="">
-                                    <label for="">Guarantor-II</label>
-                                    <input type="text" id="gii_address" autocomplete="off"/>
+                                    <label for="">Joint Applicant</label>
+                                    <input type="text" id="j_cmpcity" autocomplete="off"/>
                                 </div>
                             </div>
-                            <div class="col-md-4">
-                                <div class="pb-4 mb-2">
-                                    <strong style="margin-bottom:15px;"></strong>
-                                </div>
-                                <div class="inputContainer1" style="">
-                                    <label for="">Guarantor-III</label>
-                                    <input type="text" id="giii_address" autocomplete="off"/>
-                                </div>
-                            </div>
-
-                            <div class="col-md-4">
+                            <div class="col-md-3 applicant">
                                 <div class="pb-2">
-                                    <strong style="margin-bottom:15px;">Occupation</strong>
+                                    <strong style="margin-bottom:15px;">State</strong>
                                 </div>
                                 <div class="inputContainer1" style="">
-                                    <label for="">Guarantor-I </label>
-                                    <input type="text" id="gi_occupation" autocomplete="off"/>
+                                    <label for="">Applicant </label>
+                                    <input type="text" id="a_cmpstate"  autocomplete="off" />
                                 </div>
                             </div>
-                            <div class="col-md-4">
+                            <div class="col-md-3 joint-applicant">
                                 <div class="pb-4 mb-2">
                                     <strong style="margin-bottom:15px;"></strong>
                                 </div>
                                 <div class="inputContainer1" style="">
-                                    <label for="">Guarantor-II</label>
-                                    <input type="text" id="gii_occupation"autocomplete="off"/>
+                                    <label for="">Joint Applicant</label>
+                                    <input type="text" id="j_cmpstate" autocomplete="off"/>
                                 </div>
                             </div>
-                            <div class="col-md-4">
+                            <div class="col-md-3 applicant">
+                                <div class="pb-2">
+                                    <strong style="margin-bottom:15px;">Pin Code</strong>
+                                </div>
+                                <div class="inputContainer1" style="">
+                                    <label for="">Applicant </label>
+                                    <input type="text" id="a_cmppin"  autocomplete="off" />
+                                </div>
+                            </div>
+                            <div class="col-md-3 joint-applicant">
                                 <div class="pb-4 mb-2">
                                     <strong style="margin-bottom:15px;"></strong>
                                 </div>
                                 <div class="inputContainer1" style="">
-                                    <label for="">Guarantor-III</label>
-                                    <input type="text" id="giii_occupation" autocomplete="off"/>
+                                    <label for="">Joint Applicant</label>
+                                    <input type="text" id="j_cmppin" autocomplete="off"/>
                                 </div>
                             </div>
-
-                            <div class="col-md-4">
+                            <div class="col-md-3 applicant">
                                 <div class="pb-2">
-                                    <strong style="margin-bottom:15px;">Net worth</strong>
+                                    <strong style="margin-bottom:15px;">STD</strong>
                                 </div>
                                 <div class="inputContainer1" style="">
-                                    <label for="">Guarantor-I </label>
-                                    <input type="text" id="gi_net" autocomplete="off"/>
+                                    <label for="">Applicant </label>
+                                    <input type="text" id="a_cmpstd"  autocomplete="off" />
                                 </div>
                             </div>
-                            <div class="col-md-4">
+                            <div class="col-md-3 joint-applicant">
                                 <div class="pb-4 mb-2">
-                                    <strong style="margin-bottom:15px;"> </strong>
+                                    <strong style="margin-bottom:15px;"></strong>
                                 </div>
                                 <div class="inputContainer1" style="">
-                                    <label for="">Guarantor-II</label>
-                                    <input type="text" id="gii_net" autocomplete="off"/>
+                                    <label for="">Joint Applicant</label>
+                                    <input type="text" id="j_cmpstd" autocomplete="off"/>
                                 </div>
                             </div>
-                            <div class="col-md-4">
-                                <div class="pb-4 mb-2">
-                                    <strong style="margin-bottom:15px;"> </strong>
-                                </div>
-                                <div class="inputContainer1" style="">
-                                    <label for="">Guarantor-III</label>
-                                    <input type="text" id="giii_net" autocomplete="off"/>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
+                            <div class="col-md-3 applicant">
                                 <div class="pb-2">
-                                    <strong style="margin-bottom:15px;">PROPOSED PERIOD OF REPAYMENT</strong>
+                                    <strong style="margin-bottom:15px;">Phone.</strong>
                                 </div>
                                 <div class="inputContainer1" style="">
-                                    <label for="">Guarantor-I </label>
-                                    <input type="text" id="gi_proposed" autocomplete="off"/>
+                                    <label for="">Applicant </label>
+                                    <input type="text" id="a_cmpphone"  autocomplete="off" />
+                                </div>
+                            </div>
+                            <div class="col-md-3 joint-applicant">
+                                <div class="pb-4 mb-2">
+                                    <strong style="margin-bottom:15px;"></strong>
+                                </div>
+                                <div class="inputContainer1" style="">
+                                    <label for="">Joint Applicant</label>
+                                    <input type="text" id="j_cmpphone" autocomplete="off"/>
+                                </div>
+                            </div>
+                            <div class="col-md-3 applicant">
+                                <div class="pb-2">
+                                    <strong style="margin-bottom:15px;">Ext.</strong>
+                                </div>
+                                <div class="inputContainer1" style="">
+                                    <label for="">Applicant </label>
+                                    <input type="text" id="a_cmpext"  autocomplete="off" />
+                                </div>
+                            </div>
+                            <div class="col-md-3 joint-applicant">
+                                <div class="pb-4 mb-2">
+                                    <strong style="margin-bottom:15px;"></strong>
+                                </div>
+                                <div class="inputContainer1" style="">
+                                    <label for="">Joint Applicant</label>
+                                    <input type="text" id="j_cmpext" autocomplete="off"/>
+                                </div>
+                            </div>
+                            <div class="col-md-3 applicant">
+                                <div class="pb-2">
+                                    <strong style="margin-bottom:15px;">Year of Incorporation.</strong>
+                                </div>
+                                <div class="inputContainer1" style="">
+                                    <label for="">Applicant </label>
+                                    <input type="text" id="a_cmpcor"  autocomplete="off" />
+                                </div>
+                            </div>
+                            <div class="col-md-3 joint-applicant">
+                                <div class="pb-4 mb-2">
+                                    <strong style="margin-bottom:15px;"></strong>
+                                </div>
+                                <div class="inputContainer1" style="">
+                                    <label for="">Joint Applicant</label>
+                                    <input type="text" id="j_cmpcor" autocomplete="off"/>
+                                </div>
+                            </div>
+                            <div class="col-md-3 applicant">
+                                <div class="pb-2">
+                                    <strong style="margin-bottom:15px;">CIN No</strong>
+                                </div>
+                                <div class="inputContainer1" style="">
+                                    <label for="">Applicant </label>
+                                    <input type="text" id="a_cmpcinno"  autocomplete="off" />
+                                </div>
+                            </div>
+                            <div class="col-md-3 joint-applicant">
+                                <div class="pb-4 mb-2">
+                                    <strong style="margin-bottom:15px;"></strong>
+                                </div>
+                                <div class="inputContainer1" style="">
+                                    <label for="">Joint Applicant</label>
+                                    <input type="text" id="j_cmpcinno" autocomplete="off"/>
+                                </div>
+                            </div>
+                            <div class="col-md-3 applicant">
+                                <div class="pb-2">
+                                    <strong style="margin-bottom:15px;">Pan</strong>
+                                </div>
+                                <div class="inputContainer1" style="">
+                                    <label for="">Applicant </label>
+                                    <input type="text" id="a_cmppan"  autocomplete="off" />
+                                </div>
+                            </div>
+                            <div class="col-md-3 joint-applicant">
+                                <div class="pb-4 mb-2">
+                                    <strong style="margin-bottom:15px;"></strong>
+                                </div>
+                                <div class="inputContainer1" style="">
+                                    <label for="">Joint Applicant</label>
+                                    <input type="text" id="j_cmppan" autocomplete="off"/>
+                                </div>
+                            </div>
+                            <div class="col-md-3 applicant">
+                                <div class="pb-2">
+                                    <strong style="margin-bottom:15px;">GSTIN No</strong>
+                                </div>
+                                <div class="inputContainer1" style="">
+                                    <label for="">Applicant </label>
+                                    <input type="text" id="a_cmpgst"  autocomplete="off" />
+                                </div>
+                            </div>
+                            <div class="col-md-3 joint-applicant">
+                                <div class="pb-4 mb-2">
+                                    <strong style="margin-bottom:15px;"></strong>
+                                </div>
+                                <div class="inputContainer1" style="">
+                                    <label for="">Joint Applicant</label>
+                                    <input type="text" id="j_cmpgst" autocomplete="off"/>
+                                </div>
+                            </div>
+                            <div class="col-md-3 applicant">
+                                <div class="pb-2">
+                                    <strong style="margin-bottom:15px;">Effective Date</strong>
+                                </div>
+                                <div class="inputContainer1" style="">
+                                    <label for="">Applicant </label>
+                                    <input type="date" id="a_cmpdate"  autocomplete="off" />
+                                </div>
+                            </div>
+                            <div class="col-md-3 joint-applicant">
+                                <div class="pb-4 mb-2">
+                                    <strong style="margin-bottom:15px;"></strong>
+                                </div>
+                                <div class="inputContainer1" style="">
+                                    <label for="">Joint Applicant</label>
+                                    <input type="date" id="j_cmpdate" autocomplete="off"/>
                                 </div>
                             </div>
                         </div>
-                        <div class="row">
-                            <div class="col">
-                                <div class="inputContainer" style="border:0px; padding:0px;">
-                                    <a id="submit" class="btn" style="background-color:purple;color:#fff; width:100%;padding:15px;">Submit</a>
-                                    <a id="submit1" class="btn" style="background-color:purple;color:#fff; width:100%;padding:15px; display:none;">Print</a>
+                        <div class="row mt-4">
+                            <div class="col-md-12">
+                                <h4 class="mob-head"> <b>INCOME DETAILS</b></h4>
+                            </div>
+                            <div class="col-md-3 applicant">
+                                <div class="pb-2">
+                                    <strong style="margin-bottom:15px;">Annual Salary/Bussiness</strong>
+                                </div>
+                                <div class="inputContainer1" style="">
+                                    <label for="">Applicant </label>
+                                    <input type="text" id="a_anualSalary"  autocomplete="off" />
                                 </div>
                             </div>
-                            <div class="col" id="bb" style="display:none">
-                                <div class="inputContainer" style="border:0px; padding:0px;">
-                                    <a id="back" class="btn btn-info" style="color:#fff; width:100%;padding:15px;">Back</a>
+                            <div class="col-md-3 joint-applicant">
+                                <div class="pb-4 mb-2">
+                                    <strong style="margin-bottom:15px;"></strong>
+                                </div>
+                                <div class="inputContainer1" style="">
+                                    <label for="">Joint Applicant</label>
+                                    <input type="text" id="j_anualsalary" autocomplete="off"/>
+                                </div>
+                            </div>
+                            <div class="col-md-3 applicant">
+                                <div class="pb-2">
+                                    <strong style="margin-bottom:15px;">Other Anual Income</strong>
+                                </div>
+                                <div class="inputContainer1" style="">
+                                    <label for="">Applicant </label>
+                                    <input type="text" id="a_otherincome"  autocomplete="off" />
+                                </div>
+                            </div>
+                            <div class="col-md-3 joint-applicant">
+                                <div class="pb-4 mb-2">
+                                    <strong style="margin-bottom:15px;"></strong>
+                                </div>
+                                <div class="inputContainer1" style="">
+                                    <label for="">Joint Applicant</label>
+                                    <input type="text" id="j_otherincome" autocomplete="off"/>
+                                </div>
+                            </div>
+                            <div class="col-md-3 applicant">
+                                <div class="pb-2">
+                                    <strong style="margin-bottom:15px;">Name Of Bank</strong>
+                                </div>
+                                <div class="inputContainer1" style="">
+                                    <label for="">Applicant </label>
+                                    <input type="text" id="a_bank"  autocomplete="off" />
+                                </div>
+                            </div>
+                            <div class="col-md-3 joint-applicant">
+                                <div class="pb-4 mb-2">
+                                    <strong style="margin-bottom:15px;"></strong>
+                                </div>
+                                <div class="inputContainer1" style="">
+                                    <label for="">Joint Applicant</label>
+                                    <input type="text" id="j_bank" autocomplete="off"/>
+                                </div>
+                            </div>
+                            <div class="col-md-3 applicant">
+                                <div class="pb-2">
+                                    <strong style="margin-bottom:15px;">Account Number</strong>
+                                </div>
+                                <div class="inputContainer1" style="">
+                                    <label for="">Applicant </label>
+                                    <input type="text" id="a_account"  autocomplete="off" />
+                                </div>
+                            </div>
+                            <div class="col-md-3 joint-applicant">
+                                <div class="pb-4 mb-2">
+                                    <strong style="margin-bottom:15px;"></strong>
+                                </div>
+                                <div class="inputContainer1" style="">
+                                    <label for="">Joint Applicant</label>
+                                    <input type="text" id="j_account" autocomplete="off"/>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt-4">
+                            <div class="col-md-12">
+                                <h4 class="mob-head"> <b>REQUESTED LOAN DETAILS</b></h4>
+                            </div>
+                            <div class="col-md-3 applicant">
+                                <div class="pb-2">
+                                    <strong style="margin-bottom:15px;">Loan Amount</strong>
+                                </div>
+                                <div class="inputContainer1" style="">
+                                    <label for="">Applicant</label>
+                                    <input type="text" id="a_loanAmt"  autocomplete="off" />
+                                </div>
+                            </div>
+                            <div class="col-md-3 applicant">
+                                <div class="pb-2">
+                                    <strong style="margin-bottom:15px;">Tenure In Month</strong>
+                                </div>
+                                <div class="inputContainer1" style="">
+                                    <label for="">Applicant</label>
+                                    <input type="text" id="a_loanAmt"  autocomplete="off" />
+                                </div>
+                            </div>
+                            <div class="col-md-3 applicant">
+                                <div class="pb-2">
+                                    <strong style="margin-bottom:15px;">End Use</strong>
+                                </div>
+                                <div class="inputContainer1" style="">
+                                    <label for="">Applicant</label>
+                                    <input type="text" id="a_endUse"  autocomplete="off" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt-4">
+                            <div class="col-md-12">
+                                <h4 class="mob-head"> <b>PERSONAL REFERENCE 1</b></h4>
+                            </div>
+                            <div class="col-md-3 applicant">
+                                <div class="pb-2">
+                                    <strong style="margin-bottom:15px;">Name</strong>
+                                </div>
+                                <div class="inputContainer1" style="">
+                                    <label for="">Applicant</label>
+                                    <input type="text" id="a_personalname"  autocomplete="off" />
+                                </div>
+                            </div>
+                            <div class="col-md-3 applicant">
+                                <div class="pb-2">
+                                    <strong style="margin-bottom:15px;">Relationship</strong>
+                                </div>
+                                <div class="inputContainer1" style="">
+                                    <label for="">Applicant</label>
+                                    <input type="text" id="a_relation"  autocomplete="off" />
+                                </div>
+                            </div>
+                            <div class="col-md-3 applicant">
+                                <div class="pb-2">
+                                    <strong style="margin-bottom:15px;">Residential Address</strong>
+                                </div>
+                                <div class="inputContainer1" style="">
+                                    <label for="">Applicant</label>
+                                    <input type="text" id="a_residental"  autocomplete="off" />
+                                </div>
+                            </div>
+                            <div class="col-md-3 applicant">
+                                <div class="pb-2">
+                                    <strong style="margin-bottom:15px;">City</strong>
+                                </div>
+                                <div class="inputContainer1" style="">
+                                    <label for="">Applicant</label>
+                                    <input type="text" id="a_refecity"  autocomplete="off" />
+                                </div>
+                            </div>
+                            <div class="col-md-3 applicant">
+                                <div class="pb-2">
+                                    <strong style="margin-bottom:15px;">State</strong>
+                                </div>
+                                <div class="inputContainer1" style="">
+                                    <label for="">Applicant</label>
+                                    <input type="text" id="a_refestate"  autocomplete="off" />
+                                </div>
+                            </div>
+                            <div class="col-md-3 applicant">
+                                <div class="pb-2">
+                                    <strong style="margin-bottom:15px;">PIN</strong>
+                                </div>
+                                <div class="inputContainer1" style="">
+                                    <label for="">Applicant</label>
+                                    <input type="text" id="a_refepin"  autocomplete="off" />
+                                </div>
+                            </div>
+                            <div class="col-md-3 applicant">
+                                <div class="pb-2">
+                                    <strong style="margin-bottom:15px;">STD</strong>
+                                </div>
+                                <div class="inputContainer1" style="">
+                                    <label for="">Applicant</label>
+                                    <input type="text" id="a_refestd"  autocomplete="off" />
+                                </div>
+                            </div>
+                            <div class="col-md-3 applicant">
+                                <div class="pb-2">
+                                    <strong style="margin-bottom:15px;">Phone</strong>
+                                </div>
+                                <div class="inputContainer1" style="">
+                                    <label for="">Applicant</label>
+                                    <input type="text" id="a_refephone"  autocomplete="off" />
+                                </div>
+                            </div>
+                            <div class="col-md-3 applicant">
+                                <div class="pb-2">
+                                    <strong style="margin-bottom:15px;">Mobile</strong>
+                                </div>
+                                <div class="inputContainer1" style="">
+                                    <label for="">Applicant</label>
+                                    <input type="text" id="a_refemobile"  autocomplete="off" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt-4">
+                            <div class="col-md-12">
+                                <h4 class="mob-head"> <b>PERSONAL REFERENCE 2</b></h4>
+                            </div>
+                            <div class="col-md-3 applicant">
+                                <div class="pb-2">
+                                    <strong style="margin-bottom:15px;">Name</strong>
+                                </div>
+                                <div class="inputContainer1" style="">
+                                    <label for="">Applicant</label>
+                                    <input type="text" id="a_personalname2"  autocomplete="off" />
+                                </div>
+                            </div>
+                            <div class="col-md-3 applicant">
+                                <div class="pb-2">
+                                    <strong style="margin-bottom:15px;">Relationship</strong>
+                                </div>
+                                <div class="inputContainer1" style="">
+                                    <label for="">Applicant</label>
+                                    <input type="text" id="a_relation2"  autocomplete="off" />
+                                </div>
+                            </div>
+                            <div class="col-md-3 applicant">
+                                <div class="pb-2">
+                                    <strong style="margin-bottom:15px;">Residential Address</strong>
+                                </div>
+                                <div class="inputContainer1" style="">
+                                    <label for="">Applicant</label>
+                                    <input type="text" id="a_residental2"  autocomplete="off" />
+                                </div>
+                            </div>
+                            <div class="col-md-3 applicant">
+                                <div class="pb-2">
+                                    <strong style="margin-bottom:15px;">City</strong>
+                                </div>
+                                <div class="inputContainer1" style="">
+                                    <label for="">Applicant</label>
+                                    <input type="text" id="a_refecity2"  autocomplete="off" />
+                                </div>
+                            </div>
+                            <div class="col-md-3 applicant">
+                                <div class="pb-2">
+                                    <strong style="margin-bottom:15px;">State</strong>
+                                </div>
+                                <div class="inputContainer1" style="">
+                                    <label for="">Applicant</label>
+                                    <input type="text" id="a_refestate2"  autocomplete="off" />
+                                </div>
+                            </div>
+                            <div class="col-md-3 applicant">
+                                <div class="pb-2">
+                                    <strong style="margin-bottom:15px;">PIN</strong>
+                                </div>
+                                <div class="inputContainer1" style="">
+                                    <label for="">Applicant</label>
+                                    <input type="text" id="a_refepin2"  autocomplete="off" />
+                                </div>
+                            </div>
+                            <div class="col-md-3 applicant">
+                                <div class="pb-2">
+                                    <strong style="margin-bottom:15px;">STD</strong>
+                                </div>
+                                <div class="inputContainer1" style="">
+                                    <label for="">Applicant</label>
+                                    <input type="text" id="a_refestd2"  autocomplete="off" />
+                                </div>
+                            </div>
+                            <div class="col-md-3 applicant">
+                                <div class="pb-2">
+                                    <strong style="margin-bottom:15px;">Phone</strong>
+                                </div>
+                                <div class="inputContainer1" style="">
+                                    <label for="">Applicant</label>
+                                    <input type="text" id="a_refephone2"  autocomplete="off" />
+                                </div>
+                            </div>
+                            <div class="col-md-3 applicant">
+                                <div class="pb-2">
+                                    <strong style="margin-bottom:15px;">Mobile</strong>
+                                </div>
+                                <div class="inputContainer1" style="">
+                                    <label for="">Applicant</label>
+                                    <input type="text" id="a_refemobile2"  autocomplete="off" />
                                 </div>
                             </div>
                         </div>
@@ -1376,36 +1153,4 @@
             </div>
         </div>
     </div>
-    </div>
-    <?php include_once('./footer.php') ?>
 </body>
-<script>
-$(document).ready(
-    function(){
-$('#logout').click(function(){
-    $.ajax({
-         type: "POST",
-                    url: "./backend/logout.php",
-                    data: { },
-
-                    success: function (resultData) {
-                         console.log(resultData)
-                        resultData = JSON.parse(resultData)
-                        if (resultData.code == "200") 
-                        {
-                             window.location.href = "http://acses.in/";
-                           
-                        } else {
-                           alert("Something went wrong");
-                        }
-                    }
-
-    })
-     window.location.href = "./index.php";
-})
-}
-)
-
-</script>
-
-</html>

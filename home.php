@@ -43,7 +43,7 @@
                         class="btn w-auto">Passport Seva</a> </div>
             </div>
             <div class="col-md-4">
-                <div class="logoBox"><img src="./img/7.jpeg" class="d-block w-100" alt="..."> <a href="loanapplication.php"
+                <div class="logoBox"><img src="./img/7.jpeg" class="d-block w-100" alt="..."> <a href="unsecuredLoan.php"
                         class="btn w-auto">Unsecured Loans</a></div>
             </div>
 
