@@ -25,10 +25,48 @@
                 <div class="col p-3">
                     <div class="container" id="contePrint">
                         <div class="row px-3 py-3">
-                            <div class="col-md-6">
+                            <div class="col-md-4">
                                 <div class="inputContainer1 amt" style="">
                                     <label for="">Loan Expectations</label>
                                     <input type="text" id="loanAmtMain"/>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt-4">
+                            <div class="col-md-3 applicant">
+                                <div class="pb-2">
+                                    <strong style="margin-bottom:15px;">Application Date</strong>
+                                </div>
+                                <div class="inputContainer1" style="">
+                                    <label for="">Applicant </label>
+                                    <input type="date" id="a_name"  autocomplete="off" />
+                                </div>
+                            </div>
+                            <div class="col-md-3 applicant">
+                                <div class="pb-2">
+                                    <strong style="margin-bottom:15px;">LOS No</strong>
+                                </div>
+                                <div class="inputContainer1" style="">
+                                    <label for="">Applicant </label>
+                                    <input type="date" id="a_name"  autocomplete="off" />
+                                </div>
+                            </div>
+                            <div class="col-md-3 applicant">
+                                <div class="pb-2">
+                                    <strong style="margin-bottom:15px;">Photo</strong>
+                                </div>
+                                <div class="inputContainer1" style="">
+                                    <label for="">Applicant </label>
+                                    <input type="file" id="a_name"  autocomplete="off" />
+                                </div>
+                            </div>
+                            <div class="col-md-3 applicant">
+                                <div class="pb-2">
+                                    <strong style="margin-bottom:15px;">Signature</strong>
+                                </div>
+                                <div class="inputContainer1" style="">
+                                    <label for="">Applicant </label>
+                                    <input type="file" id="a_name"  autocomplete="off" />
                                 </div>
                             </div>
                         </div>
