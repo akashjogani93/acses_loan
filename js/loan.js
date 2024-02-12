@@ -71,7 +71,8 @@ $(document).ready(function()
       });
   }
 
-  $('input').focus(function() {
+  $('input').focus(function() 
+  {
     // Clear existing error messages and reset styling
     var inputContainer = $(this).closest('.inputContainer1');
     // inputContainer.find('.error-message').remove();

@@ -13,6 +13,11 @@
                 width: 15px !important;
                 transform: scale(1.0) !important;
             }
+            input[type="radio"]{
+                width: 15px !important;
+                transform: scale(1.0) !important;
+            }
+            
             .form-check {
                 min-height: 33px;           
             }
@@ -38,6 +43,13 @@
             input[type="checkbox"]{
                 width: 27px;
                 transform: scale(1.6);
+            }
+            input[type="radio"]{
+                width: 15px !important;
+                transform: scale(1.6) !important;
+            }
+            #gstyes{
+                margin-right:10px;
             }
             .main-checks{
                 margin-top:20px;
@@ -76,7 +88,7 @@
                                 </div>
                                 <div class="inputContainer1" style="">
                                     <label for="">Applicant </label>
-                                    <input type="date" id="a_name"  autocomplete="off" />
+                                    <input type="date" id="aplication_date"  autocomplete="off" />
                                 </div>
                             </div>
                             <div class="col-md-3 applicant">
@@ -85,7 +97,7 @@
                                 </div>
                                 <div class="inputContainer1" style="">
                                     <label for="">Applicant </label>
-                                    <input type="text" id="a_name"  autocomplete="off" />
+                                    <input type="text" id="losno"  autocomplete="off" />
                                 </div>
                             </div>
                             <div class="col-md-3 applicant">
@@ -94,7 +106,7 @@
                                 </div>
                                 <div class="inputContainer1" style="">
                                     <label for="">Applicant </label>
-                                    <input type="file" id="a_name"  autocomplete="off" />
+                                    <input type="file" id="photo"  autocomplete="off" />
                                 </div>
                             </div>
                             <div class="col-md-3 applicant">
@@ -103,7 +115,7 @@
                                 </div>
                                 <div class="inputContainer1" style="">
                                     <label for="">Applicant </label>
-                                    <input type="file" id="a_name"  autocomplete="off" />
+                                    <input type="file" id="signature"  autocomplete="off" />
                                 </div>
                             </div>
                         </div>
@@ -146,9 +158,9 @@
                                 </div>
 
                                 <div class="form-check">
-                                    <input type="checkbox" id="othersCheckBox" name="employmentStatus">
-                                    <label for="othersCheckBox"><strong>Others</strong></label>
-                                    <input type="text" style="width:100px; border:none; border-bottom:1px solid black" id="otherinput">
+                                    <input type="checkbox" id="occupationOther" name="employmentStatus">
+                                    <label for="occupationOther"><strong>Others</strong></label>
+                                    <input type="text" style="width:100px; border:none; border-bottom:1px solid black" id="occupationotherinput">
                                 </div>
                             </div>
                         </div>
@@ -159,36 +171,33 @@
                             </div>
                             <div class="col-md-12 checks">
                                 <div class="form-check">
-                                <label for="checkBox"><strong>Doctor</strong></label>
-                                <input type="checkbox" id="checkBox" name="checkBox">
+                                    <label for="doctor"><strong>Doctor</strong></label>
+                                    <input type="checkbox" id="doctor" name="selfEmployed" value="Doctor">
                                 </div>
 
                                 <div class="form-check">
-                                <label for="checkBox"><strong>CA/CS</strong></label>
-                                <input type="checkbox" id="checkBox" name="checkBox">
+                                <label for="cacs"><strong>CA/CS</strong></label>
+                                <input type="checkbox" id="cacs" name="selfEmployed" value="CA/CS">
                                 </div>
 
                                 <div class="form-check">
-                                <label for="checkBox"><strong>Consultant</strong></label>
-                                <input type="checkbox" id="checkBox" name="checkBox">
+                                <label for="consultant"><strong>Consultant</strong></label>
+                                <input type="checkbox" id="consultant" name="selfEmployed" value="Consultant">
                                 </div>
 
                                 <div class="form-check">
-                                <label for="checkBox"><strong>Architech</strong></label>
-                                <input type="checkbox" id="checkBox" name="checkBox">
+                                <label for="architech"><strong>Architech</strong></label>
+                                <input type="checkbox" id="architech" name="selfEmployed" value="Architech">
                                 </div>
 
                                 <div class="form-check">
-                                <label for="checkBox"><strong>Lawyer</strong></label>
-                                <input type="checkbox" id="checkBox" name="checkBox">
+                                <label for="lawyer"><strong>Lawyer</strong></label>
+                                <input type="checkbox" id="lawyer" name="selfEmployed" value="Lawyer">
                                 </div>
-
-                                
-
                                 <div class="form-check">
-                                <label for="checkBox"><strong>Others </strong></label>
-                                <input type="checkbox" id="checkBox" name="checkBox">
-                                <input type="text" style="width:100px; border:none; border-bottom:1px solid black">
+                                <label for="selfEmployedother"><strong>Others </strong></label>
+                                <input type="checkbox" id="selfEmployedother" name="selfEmployed">
+                                <input type="text" style="width:100px; border:none; border-bottom:1px solid black" id="selfEmployedotherinput">
                                 </div>
                             </div>
                         </div>
@@ -197,38 +206,37 @@
                             <div class="col-md-12">
                                 <h4><b> If Business </b></h4>
                             <h6><b>Type Of Company</b></h6>
-                                
                             </div>
                             <div class="col-md-12 checks">
                                 <div class="form-check">
-                                <label for="checkBox"><strong>Propiretorship</strong></label>
-                                <input type="checkbox" id="checkBox" name="checkBox">
+                                <label for="business"><strong>Propiretorship</strong></label>
+                                <input type="checkbox" id="prpiretorship" name="business" value="Propiretorship">
                                 </div>
 
                                 <div class="form-check">
-                                <label for="checkBox"><strong>Patnership</strong></label>
-                                <input type="checkbox" id="checkBox" name="checkBox">
+                                <label for="partnership"><strong>Patnership</strong></label>
+                                <input type="checkbox" id="partnership" name="business" value="Patnership">
                                 </div>
 
                                 <div class="form-check">
-                                <label for="checkBox"><strong>Pvt.Ltd</strong></label>
-                                <input type="checkbox" id="checkBox" name="checkBox">
+                                <label for="pvtltd"><strong>Pvt.Ltd</strong></label>
+                                <input type="checkbox" id="pvtltd" name="business" value="Pvt.Ltd">
                                 </div>
 
                                 <div class="form-check">
-                                <label for="checkBox"><strong>Public Ltd</strong></label>
-                                <input type="checkbox" id="checkBox" name="checkBox">
+                                <label for="publicltd"><strong>Public Ltd</strong></label>
+                                <input type="checkbox" id="publicltd" name="business" value="Public Ltd">
                                 </div>
 
                                 <div class="form-check">
-                                <label for="checkBox"><strong>Ltd liablity Co</strong></label>
-                                <input type="checkbox" id="checkBox" name="checkBox">
+                                <label for="liability"><strong>Ltd liablity Co</strong></label>
+                                <input type="checkbox" id="liability" name="business" value="Ltd liablity Co">
                                 </div>
 
                                 <div class="form-check">
-                                <label for="checkBox"><strong>Others </strong></label>
-                                <input type="checkbox" id="checkBox" name="checkBox">
-                                <input type="text" style="width:100px; border:none; border-bottom:1px solid black">
+                                <label for="businessOther"><strong>Others </strong></label>
+                                <input type="checkbox" id="businessOther" name="business">
+                                <input type="text" style="width:100px; border:none; border-bottom:1px solid black" id="businessOtherinput">
                                 </div>
                             </div>
                         </div>
@@ -240,34 +248,34 @@
                             </div>
                             <div class="col-md-12 checks">
                                 <div class="form-check">
-                                <label for="checkBox"><strong>Manufaturer</strong></label>
-                                <input type="checkbox" id="checkBox" name="checkBox">
+                                <label for="manufature"><strong>Manufaturer</strong></label>
+                                <input type="checkbox" id="manufature" name="nature" value="Manufaturer">
                                 </div>
 
                                 <div class="form-check">
-                                <label for="checkBox"><strong>Agriculturist</strong></label>
-                                <input type="checkbox" id="checkBox" name="checkBox">
+                                <label for="agricul"><strong>Agriculturist</strong></label>
+                                <input type="checkbox" id="agricul" name="nature" value="Agriculturist">
                                 </div>
 
                                 <div class="form-check">
-                                <label for="checkBox"><strong>Service Provider</strong></label>
-                                <input type="checkbox" id="checkBox" name="checkBox">
+                                <label for="ser_provi"><strong>Service Provider</strong></label>
+                                <input type="checkbox" id="ser_provi" name="nature" value="Service Provider">
                                 </div>
 
                                 <div class="form-check">
-                                <label for="checkBox"><strong>Trade/ Distributor</strong></label>
-                                <input type="checkbox" id="checkBox" name="checkBox">
+                                <label for="trade"><strong>Trade/ Distributor</strong></label>
+                                <input type="checkbox" id="trade" name="nature" value="Trade/ Distributor">
                                 </div>
 
                                 <div class="form-check">
-                                <label for="checkBox"><strong>Retailers</strong></label>
-                                <input type="checkbox" id="checkBox" name="checkBox">
+                                <label for="retailer"><strong>Retailers</strong></label>
+                                <input type="checkbox" id="retailer" name="nature" value="Retailers">
                                 </div>
 
                                 <div class="form-check">
-                                <label for="checkBox"><strong>Others </strong></label>
-                                <input type="checkbox" id="checkBox" name="checkBox">
-                                <input type="text" style="width:100px; border:none; border-bottom:1px solid black">
+                                <label for="natureother"><strong>Others </strong></label>
+                                <input type="checkbox" id="natureother" name="nature">
+                                <input type="text" style="width:100px; border:none; border-bottom:1px solid black" id="natureotherinput">
                                 </div>
                             </div>
                         </div>
@@ -279,44 +287,44 @@
                             </div>
                             <div class="col-md-12 checks">
                                 <div class="form-check">
-                                <label for="checkBox"><strong>Pvt.Ltd</strong></label>
-                                <input type="checkbox" id="checkBox" name="checkBox">
+                                <label for="salariedpvt"><strong>Pvt.Ltd</strong></label>
+                                <input type="checkbox" id="salariedpvt" name="salaried" value="Pvt.Ltd">
                                 </div>
 
                                 <div class="form-check">
-                                <label for="checkBox"><strong>Partnership</strong></label>
-                                <input type="checkbox" id="checkBox" name="checkBox">
+                                <label for="salapartnership"><strong>Partnership</strong></label>
+                                <input type="checkbox" id="salapartnership" name="salaried" id="Partnership">
                                 </div>
 
                                 <div class="form-check">
-                                <label for="checkBox"><strong> Proprietor</strong></label>
-                                <input type="checkbox" id="checkBox" name="checkBox">
+                                <label for="salaproprietor"><strong> Proprietor</strong></label>
+                                <input type="checkbox" id="salaproprietor" name="salaried" value="Proprietor">
                                 </div>
 
                                 <div class="form-check">
-                                <label for="checkBox"><strong>Public Ltd</strong></label>
-                                <input type="checkbox" id="checkBox" name="checkBox">
+                                <label for="salaltd"><strong>Public Ltd</strong></label>
+                                <input type="checkbox" id="salaltd" name="salaried" value="Public Ltd">
                                 </div>
 
                                 <div class="form-check">
                                 <label for="checkBox"><strong>PSU</strong></label>
-                                <input type="checkbox" id="checkBox" name="checkBox">
+                                <input type="checkbox" id="salapsu" name="salaried" value="PSU">
                                 </div>
 
                                 <div class="form-check">
-                                <label for="checkBox"><strong>Govt</strong></label>
-                                <input type="checkbox" id="checkBox" name="checkBox">
+                                <label for="govt"><strong>Govt</strong></label>
+                                <input type="checkbox" id="govt" name="salaried" value="Govt">
                                 </div>
 
                                 <div class="form-check">
-                                <label for="checkBox"><strong>MNC</strong></label>
-                                <input type="checkbox" id="checkBox" name="checkBox">
+                                <label for="mnc"><strong>MNC</strong></label>
+                                <input type="checkbox" id="mnc" name="salaried" value="MNC">
                                 </div>
 
                                 <div class="form-check">
-                                <label for="checkBox"><strong>Others </strong></label>
-                                <input type="checkbox" id="checkBox" name="checkBox">
-                                <input type="text" style="width:100px; border:none; border-bottom:1px solid black">
+                                <label for="salaother"><strong>Others </strong></label>
+                                <input type="checkbox" id="salaother" name="salaried">
+                                <input type="text" style="width:100px; border:none; border-bottom:1px solid black" id="salaotherinput">
                                 </div>
                             </div>
                         </div>
@@ -326,9 +334,13 @@
                             <h6><b>Designation</b></h6>
                                 
                             </div>
-                            <div class="col-md-12 checks">
-                                <div class="form-check">
-                                <input type="text" style="width:300px; border:none; border-bottom:1px solid black">
+                            <div class="col-md-3 checks">
+                                <!-- <div class="form-check">
+                                <input type="text" id="designation" style="width:300px; border:none; border-bottom:1px solid black">
+                                </div> -->
+                                <div class="inputContainer1" style="">
+                                    <label for="">Applicant </label>
+                                    <input type="text" id="designation"  autocomplete="off" />
                                 </div>
                             </div>
                         </div>
@@ -339,11 +351,11 @@
                                 <div class="col-md-3">
                                     <h6><b>GSTIN Available</b></h6>
                                     <div class="form-check">
-                                        <label for="checkBox"><strong>Yes</strong></label>
-                                        <input type="checkbox" id="checkBox" name="checkBox">
+                                        <label for="gstyes"><strong>Yes</strong></label>
+                                        <input type="radio" id="gstyes" name="gstavail" value="Yes">
 
-                                        <label for="checkBox"><strong>No</strong></label>
-                                        <input type="checkbox" id="checkBox" name="checkBox">
+                                        <label for="gstno"><strong>No</strong></label>
+                                        <input type="radio" id="gstno" name="gstavail" value="No">
                                     </div>
                                 </div>
                                 
@@ -351,14 +363,22 @@
                                 <h6><b>GSTIN No</b></h6>
                                     <div class="form-check">
                                       
-                                        <input type="text" class="gst-no" style="">
+                                        <!-- <input type="text" class="gst-no" style="" id="gstnumber"> -->
+                                        <div class="inputContainer1" style="">
+                                            <label for="">Applicant </label>
+                                        <input type="text" id="gstnumber"  autocomplete="off" />
+                                          </div>
                                     </div>
                                 </div>
 
                                 <div class="col-md-5">
                                 <h6><b>Effective Date</b></h6>
                                     <div class="form-check">
-                                        <input type="date" style="border: none; border-bottom: 1px solid black;">
+                                        <!-- <input type="date" style="border: none; border-bottom: 1px solid black;" id="efectivedate"> -->
+                                        <div class="inputContainer1" style="">
+                                            <label for="">Applicant </label>
+                                        <input type="date" id="efectivedate"  autocomplete="off" />
+                                </div>
                                     </div>
                                 </div>
 
@@ -371,23 +391,23 @@
                             </div>
                             <div class="col-md-12 checks">
                                 <div class="form-check">
-                                <label for="checkBox"><strong>Applicant</strong></label>
-                                <input type="checkbox" id="checkBox" name="checkBox">
+                                <label for="applicantyo"><strong>Applicant</strong></label>
+                                <input type="checkbox" id="applicantyo" name="yourself" value="Applicant">
                                 </div>
 
                                 <div class="form-check">
-                                <label for="checkBox"><strong>co-applicant</strong></label>
-                                <input type="checkbox" id="checkBox" name="checkBox">
+                                <label for="coapplicant"><strong>co-applicant</strong></label>
+                                <input type="checkbox" id="coapplicant" name="yourself" value="Co-Applicant">
                                 </div>
 
                                 <div class="form-check">
-                                <label for="checkBox"><strong> Guarantor</strong></label>
-                                <input type="checkbox" id="checkBox" name="checkBox">
+                                <label for="guarantor"><strong> Guarantor</strong></label>
+                                <input type="checkbox" id="guarantor" name="yourself" value="Guarantor">
                                 </div>
 
                                 <div class="form-check">
                                 <label for="checkBox"><strong>Relationship With Applicant </strong></label>
-                                <input type="text" style="width:100px; border:none; border-bottom:1px solid black">
+                                <input type="text" style="width:100px; border:none; border-bottom:1px solid black" id="relationWithAplicant">
                                 </div>
                             </div>
                         </div>
@@ -505,7 +525,7 @@
                                 </div>
                                 <div class="inputContainer1" style="">
                                     <label for="">Joint Applicant</label>
-                                    <select name="a_gender" id="a_gender">
+                                    <select name="j_gender" id="j_gender">
                                         <option value="">Select</option>
                                         <option>Male</option>
                                         <option>Female</option>
@@ -756,24 +776,24 @@
                             </div>
                             <div class="col-md-12 checks">
                                 <div class="form-check">
-                                    <label for="checkBox"><strong>Owned</strong></label>
-                                    <input type="checkbox" id="checkBox" name="checkBox">
+                                    <label for="owned"><strong>Owned</strong></label>
+                                    <input type="checkbox" id="owned" name="addressdetails" value="Owned">
                                 </div>
                                 <div class="form-check">
-                                    <label for="checkBox1"><strong>Parents</strong></label>
-                                    <input type="checkbox" id="checkBox1" name="checkBox">
+                                    <label for="parents"><strong>Parents</strong></label>
+                                    <input type="checkbox" id="parents" name="addressdetails" value="Parents">
                                 </div>
                                 <div class="form-check">
-                                <label for="checkBox"><strong>Co. Provided</strong></label>
-                                <input type="checkbox" id="checkBox" name="checkBox">
+                                <label for="coprovided"><strong>Co. Provided</strong></label>
+                                <input type="checkbox" id="coprovided" name="addressdetails" value="Co. Provided">
                                 </div>
                                 <div class="form-check">
-                                    <label for="checkBox"><strong>Rented</strong></label>
-                                    <input type="checkbox" id="checkBox" name="checkBox">
+                                    <label for="rented"><strong>Rented</strong></label>
+                                    <input type="checkbox" id="rented" name="addressdetails" value="Rented">
                                 </div>
                                 <div class="form-check">
                                     <label for="checkBox"><strong>Monthly Rents (RS)</strong></label>
-                                    <input type="text" style="border:none; border-bottom:1px solid black;">
+                                    <input type="text" style="border:none; border-bottom:1px solid black;" id="monthlyRent">
                                 </div>
                             </div><br><br>
                             <div class="col-md-3 applicant">
@@ -1256,7 +1276,7 @@
                                 </div>
                                 <div class="inputContainer1" style="">
                                     <label for="">Applicant </label>
-                                    <input type="text" id="a_bank"  autocomplete="off" />
+                                    <input type="text" id="a_branch"  autocomplete="off" />
                                 </div>
                             </div>
                             <div class="col-md-3 applicant">
@@ -1306,7 +1326,7 @@
                                 </div>
                                 <div class="inputContainer1" style="">
                                     <label for="">Applicant</label>
-                                    <input type="text" id="a_loanAmt"  autocomplete="off" />
+                                    <input type="text" id="a_loantenure"  autocomplete="off" />
                                 </div>
                             </div>
                             <div class="col-md-3 applicant">
@@ -1501,7 +1521,7 @@
                                     <strong style="margin-bottom:15px;">SO Code</strong>
                                 </div>
                                 <div class="inputContainer1" style="">
-                                    <input type="text"   autocomplete="off" />
+                                    <input type="text" id="socode" autocomplete="off" />
                                 </div>
                             </div>
                             <div class="col-md-3 ">
@@ -1509,7 +1529,7 @@
                                     <strong style="margin-bottom:15px;">DSA Code</strong>
                                 </div>
                                 <div class="inputContainer1" style="">
-                                    <input type="text"  autocomplete="off" />
+                                    <input type="text" id="dsacode" autocomplete="off" />
                                 </div>
                             </div>
                             <div class="col-md-3 ">
@@ -1517,7 +1537,7 @@
                                     <strong style="margin-bottom:15px;">SM Code</strong>
                                 </div>
                                 <div class="inputContainer1" style="">
-                                    <input type="text"   autocomplete="off" />
+                                    <input type="text" id="smcode" autocomplete="off" />
                                 </div>
                             </div>
                             <div class="col-md-3 ">
@@ -1525,7 +1545,7 @@
                                     <strong style="margin-bottom:15px;">Branch</strong>
                                 </div>
                                 <div class="inputContainer1" style="">
-                                    <input type="text"  autocomplete="off" />
+                                    <input type="text" id="branchcp" autocomplete="off" />
                                 </div>
                             </div>
                             <div class="col-md-3 ">
@@ -1533,7 +1553,7 @@
                                     <strong style="margin-bottom:15px;">RM Code</strong>
                                 </div>
                                 <div class="inputContainer1" style="">
-                                    <input type="text"  autocomplete="off" />
+                                    <input type="text" id="rmcode" autocomplete="off" />
                                 </div>
                             </div>
                         </div>
@@ -1546,7 +1566,7 @@
                                     <strong style="margin-bottom:15px;">Name Of Applicant</strong>
                                 </div>
                                 <div class="inputContainer1" style="">
-                                    <input type="text"   autocomplete="off" />
+                                    <input type="text" id="nameof" autocomplete="off" />
                                 </div>
                             </div>
                             <div class="col-md-3 ">
@@ -1554,7 +1574,7 @@
                                     <strong style="margin-bottom:15px;">Date Of Applicant</strong>
                                 </div>
                                 <div class="inputContainer1" style="">
-                                    <input type="date"  autocomplete="off" />
+                                    <input type="date" id="dateof" autocomplete="off" />
                                 </div>
                             </div>
                             <div class="col-md-3 ">
@@ -1562,7 +1582,7 @@
                                     <strong style="margin-bottom:15px;">Date & Time Of Receipt</strong>
                                 </div>
                                 <div class="inputContainer1" style="">
-                                    <input type="text"   autocomplete="off" />
+                                    <input type="text" id="dateandtime" autocomplete="off" />
                                 </div>
                             </div>
                             <div class="col-md-3 ">
@@ -1570,7 +1590,7 @@
                                     <strong style="margin-bottom:15px;">HSN Contact Person Name</strong>
                                 </div>
                                 <div class="inputContainer1" style="">
-                                    <input type="text"  autocomplete="off" />
+                                    <input type="text" id="hsnpersonname" autocomplete="off" />
                                 </div>
                             </div>
                             <div class="col-md-3 ">
@@ -1578,7 +1598,7 @@
                                     <strong style="margin-bottom:15px;">Contact No</strong>
                                 </div>
                                 <div class="inputContainer1" style="">
-                                    <input type="text"  autocomplete="off" />
+                                    <input type="text" id="contactno" autocomplete="off" />
                                 </div>
                             </div>
                         </div>
